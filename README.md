@@ -20,10 +20,41 @@ Fluid Design System is built upon an extensible **3-tier design token architectu
                                │ references
                                ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  Tier 3: Component Tokens (Phase 3)                         │
-│  - Scoped bindings: button.bg, card.border, input.padding   │
-│  - Isolated component customizations                        │
+│  Tier 3: Component Tokens (Implemented)                     │
+│  - Scoped bindings: card.padding, card.bg, card.title.color │
+│  - Component-isolated token overrides & theme adaptation    │
 └─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Tier 3: Component Tokens & Card Component
+
+Tier 3 introduces component-scoped design tokens that bind Tier 2 semantic foundations to concrete component structures.
+
+### Card Component (`.fds-card`)
+- **Tokens**:
+  - `--fds-card-padding`: `var(--fds-space-inset-sm)` (**8px padding all around**)
+  - `--fds-card-bg`: `var(--fds-color-surface-default)`
+  - `--fds-card-gap`: `var(--fds-space-gap-tight)` (8px internal gap)
+  - `--fds-card-border-color`: `var(--fds-color-border-subtle)`
+  - `--fds-card-border-width`: `var(--fds-border-width-divider)` (1px)
+  - `--fds-card-border-radius`: `var(--fds-radius-card)` (12px)
+  - `--fds-card-image-radius`: `var(--fds-radius-control)` (8px)
+  - `--fds-card-title-color`: `var(--fds-color-content-primary)`
+  - `--fds-card-description-color`: `var(--fds-color-content-secondary)`
+
+### Card HTML Markup
+```html
+<article class="fds-card">
+  <div class="fds-card-media">
+    <img src="photo.jpg" alt="Cover" class="fds-card-image" />
+  </div>
+  <div class="fds-card-body">
+    <h3 class="fds-card-title">Card Title</h3>
+    <p class="fds-card-description">Card description...</p>
+  </div>
+</article>
 ```
 
 ---

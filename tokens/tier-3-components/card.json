@@ -1,0 +1,99 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "Tier 3 Component Tokens - Card Component",
+  "card": {
+    "padding": {
+      "$value": "{space.inset.sm}",
+      "$type": "dimension",
+      "$description": "Uniform 8px padding around card container"
+    },
+    "background": {
+      "$value": "{color.surface.default}",
+      "$type": "color",
+      "$description": "Card surface background color"
+    },
+    "gap": {
+      "$value": "{space.gap.tight}",
+      "$type": "dimension",
+      "$description": "Internal spacing gap between media, title, and description (8px)"
+    },
+    "border": {
+      "color": {
+        "$value": "{color.border.subtle}",
+        "$type": "color",
+        "$description": "Card outer border color"
+      },
+      "width": {
+        "$value": "{border.width.divider}",
+        "$type": "dimension",
+        "$description": "Card outer border width (1px)"
+      },
+      "style": {
+        "$value": "solid",
+        "$type": "string",
+        "$description": "Card outer border style"
+      },
+      "radius": {
+        "$value": "{radius.card}",
+        "$type": "dimension",
+        "$description": "Card container outer corner radius (12px)"
+      }
+    },
+    "image": {
+      "radius": {
+        "$value": "{radius.control}",
+        "$type": "dimension",
+        "$description": "Image media corner radius (8px)"
+      },
+      "aspectRatio": {
+        "$value": "16 / 9",
+        "$type": "string",
+        "$description": "Image default aspect ratio"
+      }
+    },
+    "title": {
+      "color": {
+        "$value": "{color.content.primary}",
+        "$type": "color",
+        "$description": "Card title text color"
+      },
+      "fontSize": {
+        "$value": "{typography.fontSize.heading-xs}",
+        "$type": "dimension",
+        "$description": "Card title font size (20px)"
+      },
+      "lineHeight": {
+        "$value": "{typography.lineHeight.heading-xs}",
+        "$type": "dimension",
+        "$description": "Card title line height (28px)"
+      },
+      "fontWeight": {
+        "$value": "{typography.fontWeight.semibold}",
+        "$type": "fontWeight",
+        "$description": "Card title font weight (600)"
+      }
+    },
+    "description": {
+      "color": {
+        "$value": "{color.content.secondary}",
+        "$type": "color",
+        "$description": "Card description body text color"
+      },
+      "fontSize": {
+        "$value": "{typography.fontSize.body-sm}",
+        "$type": "dimension",
+        "$description": "Card description font size (14px)"
+      },
+      "lineHeight": {
+        "$value": "{typography.lineHeight.body-sm}",
+        "$type": "dimension",
+        "$description": "Card description line height (20px)"
+      },
+      "fontWeight": {
+        "$value": "{typography.fontWeight.regular}",
+        "$type": "fontWeight",
+        "$description": "Card description font weight (400)"
+      }
+    }
+  }
+}

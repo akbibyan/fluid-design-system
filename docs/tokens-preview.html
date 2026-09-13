@@ -6,6 +6,7 @@
   <title>Fluid Design System - Token Architecture Showcase</title>
   <link rel="stylesheet" href="../dist/css/global-primitives.css">
   <link rel="stylesheet" href="../dist/css/semantic.css">
+  <link rel="stylesheet" href="../dist/css/components/card.css">
   <style>
     * {
       box-sizing: border-box;
@@ -431,6 +432,13 @@
       border-radius: var(--fds-radius-xs);
     }
 
+    .card-showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--fds-spacing-300);
+      margin-top: var(--fds-spacing-300);
+    }
+
     .toast {
       position: fixed;
       bottom: 24px;
@@ -469,12 +477,13 @@
   </header>
 
   <nav class="nav-pills">
+    <a href="#tier-3-components" class="nav-pill">🃏 Tier 3: Card Component</a>
     <a href="#tier-2-semantic" class="nav-pill">⭐ Tier 2: Semantic Tokens</a>
     <a href="#semantic-surfaces" class="nav-pill">Surfaces</a>
     <a href="#semantic-content" class="nav-pill">Content &amp; Contrast</a>
     <a href="#semantic-interactive" class="nav-pill">Interactive Buttons</a>
     <a href="#semantic-feedback" class="nav-pill">Feedback States</a>
-    <a href="#semantic-layout" class="nav-pill">Semantic Layout &amp; Radii</a>
+    <a href="#semantic-layout" class="nav-pill">Layout &amp; Radii</a>
     <a href="#tier-1-primitives" class="nav-pill">📦 Tier 1: Primitive Tokens</a>
     <a href="#primitive-colors" class="nav-pill">Primitive Colors</a>
     <a href="#primitive-typography" class="nav-pill">Typography</a>
@@ -482,6 +491,146 @@
   </nav>
 
   <main>
+    <!-- ====================================================================
+         TIER 3: COMPONENT TOKENS & SHOWCASE
+         ==================================================================== -->
+    <div class="tier-header" id="tier-3-components">
+      <div class="tier-title">🃏 Tier 3: Component Tokens (Card Component)</div>
+    </div>
+
+    <section id="card-component-section">
+      <h2>🃏 Fluid Card Component</h2>
+      <p class="section-desc">
+        Constructed using Tier 3 Component Tokens binding semantic tokens to a cohesive UI component. Features an image on top, title, description, and an exact <strong>8px padding all around</strong> (<code>--fds-card-padding: var(--fds-space-inset-sm)</code>).
+      </p>
+
+      <div class="card-showcase-grid">
+        <!-- Card 1 -->
+        <article class="fds-card">
+          <div class="fds-card-media">
+            <svg class="fds-card-image" viewBox="0 0 400 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="225" fill="#2563eb" />
+              <circle cx="200" cy="85" r="45" fill="#60a5fa" />
+              <path d="M0 225L120 120L220 180L310 100L400 170V225H0Z" fill="#1d4ed8" />
+              <path d="M70 225L180 145L280 200L400 130V225H70Z" fill="#1e40af" opacity="0.6" />
+            </svg>
+          </div>
+          <div class="fds-card-body">
+            <h3 class="fds-card-title">Alpine Expedition</h3>
+            <p class="fds-card-description">
+              High-altitude exploratory trail offering panoramic ridgeline views, pristine glacial lakes, and alpine wildlife.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="fds-card">
+          <div class="fds-card-media">
+            <svg class="fds-card-image" viewBox="0 0 400 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="225" fill="#0f172a" />
+              <rect x="50" y="40" width="300" height="145" rx="8" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6 6" fill="#1e293b" />
+              <circle cx="120" cy="112" r="28" fill="#0284c7" />
+              <line x1="170" y1="92" x2="310" y2="92" stroke="#f8fafc" stroke-width="6" stroke-linecap="round" />
+              <line x1="170" y1="112" x2="270" y2="112" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+              <line x1="170" y1="132" x2="240" y2="132" stroke="#64748b" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="fds-card-body">
+            <h3 class="fds-card-title">Modern Architecture</h3>
+            <p class="fds-card-description">
+              Structural engineering principles grounded in minimalist geometry, sustainable timber, and energy efficiency.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="fds-card">
+          <div class="fds-card-media">
+            <svg class="fds-card-image" viewBox="0 0 400 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="225" fill="#052e16" />
+              <rect x="40" y="35" width="80" height="155" rx="6" fill="#22c55e" opacity="0.8" />
+              <rect x="140" y="65" width="80" height="125" rx="6" fill="#16a34a" />
+              <rect x="240" y="95" width="80" height="95" rx="6" fill="#15803d" />
+              <circle cx="340" cy="60" r="16" fill="#4ade80" />
+            </svg>
+          </div>
+          <div class="fds-card-body">
+            <h3 class="fds-card-title">Eco Living Ecosystems</h3>
+            <p class="fds-card-description">
+              Biophilic interior design spaces integrated with natural air purification and renewable micro-grids.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Token Mapping Reference Table -->
+      <div style="margin-top: var(--fds-spacing-400);">
+        <h4 style="font-size: var(--fds-font-size-body-md); margin-bottom: var(--fds-spacing-150);">
+          Tier 3 Component Token Hierarchy Mapping
+        </h4>
+        <table class="typo-table">
+          <thead>
+            <tr>
+              <th>Component Token (Tier 3)</th>
+              <th>Resolves To (Tier 2 Semantic)</th>
+              <th>Primitive Value (Tier 1)</th>
+              <th>Design Intent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="meta-code">--fds-card-padding</span></td>
+              <td><code>var(--fds-space-inset-sm)</code></td>
+              <td><strong>8px</strong></td>
+              <td>Uniform padding around card container</td>
+            </tr>
+            <tr>
+              <td><span class="meta-code">--fds-card-bg</span></td>
+              <td><code>var(--fds-color-surface-default)</code></td>
+              <td><code>#ffffff</code> / <code>#0f172a</code></td>
+              <td>Card surface background</td>
+            </tr>
+            <tr>
+              <td><span class="meta-code">--fds-card-gap</span></td>
+              <td><code>var(--fds-space-gap-tight)</code></td>
+              <td><strong>8px</strong></td>
+              <td>Spacing gap between image media &amp; body</td>
+            </tr>
+            <tr>
+              <td><span class="meta-code">--fds-card-border-color</span></td>
+              <td><code>var(--fds-color-border-subtle)</code></td>
+              <td><code>#e2e8f0</code> / <code>#1e293b</code></td>
+              <td>Card container border color</td>
+            </tr>
+            <tr>
+              <td><span class="meta-code">--fds-card-border-radius</span></td>
+              <td><code>var(--fds-radius-card)</code></td>
+              <td><strong>12px</strong></td>
+              <td>Card outer corner curvature</td>
+            </tr>
+            <tr>
+              <td><span class="meta-code">--fds-card-image-radius</span></td>
+              <td><code>var(--fds-radius-control)</code></td>
+              <td><strong>8px</strong></td>
+              <td>Inner image corner curvature</td>
+            </tr>
+            <tr>
+              <td><span class="meta-code">--fds-card-title-color</span></td>
+              <td><code>var(--fds-color-content-primary)</code></td>
+              <td><code>#0f172a</code> / <code>#f8fafc</code></td>
+              <td>Title typography color</td>
+            </tr>
+            <tr>
+              <td><span class="meta-code">--fds-card-description-color</span></td>
+              <td><code>var(--fds-color-content-secondary)</code></td>
+              <td><code>#475569</code> / <code>#cbd5e1</code></td>
+              <td>Description body text color</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
     <!-- ====================================================================
          TIER 2: SEMANTIC TOKENS
          ==================================================================== -->

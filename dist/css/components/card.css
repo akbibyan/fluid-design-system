@@ -1,0 +1,82 @@
+/**
+ * Fluid Design System (FDS) - Card Component
+ * Architecture Tier: 3 (Component Tokens)
+ */
+
+.fds-card {
+  /* Tier 3 Scoped Component Token Bindings */
+  --fds-card-padding: var(--fds-space-inset-sm, 8px);
+  --fds-card-bg: var(--fds-color-surface-default, #ffffff);
+  --fds-card-gap: var(--fds-space-gap-tight, 8px);
+  --fds-card-border-color: var(--fds-color-border-subtle, #e2e8f0);
+  --fds-card-border-width: var(--fds-border-width-divider, 1px);
+  --fds-card-border-style: solid;
+  --fds-card-border-radius: var(--fds-radius-card, 12px);
+
+  --fds-card-image-radius: var(--fds-radius-control, 8px);
+  --fds-card-image-aspect-ratio: 16 / 9;
+
+  --fds-card-title-color: var(--fds-color-content-primary, #0f172a);
+  --fds-card-title-font-size: var(--fds-font-size-heading-xs, 20px);
+  --fds-card-title-line-height: var(--fds-line-height-heading-xs, 28px);
+  --fds-card-title-font-weight: var(--fds-font-weight-semibold, 600);
+
+  --fds-card-description-color: var(--fds-color-content-secondary, #475569);
+  --fds-card-description-font-size: var(--fds-font-size-body-sm, 14px);
+  --fds-card-description-line-height: var(--fds-line-height-body-sm, 20px);
+  --fds-card-description-font-weight: var(--fds-font-weight-regular, 400);
+
+  /* Component Container */
+  display: flex;
+  flex-direction: column;
+  padding: var(--fds-card-padding);
+  background-color: var(--fds-card-bg);
+  border: var(--fds-card-border-width) var(--fds-card-border-style) var(--fds-card-border-color);
+  border-radius: var(--fds-card-border-radius);
+  gap: var(--fds-card-gap);
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.fds-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.fds-card-media {
+  width: 100%;
+  aspect-ratio: var(--fds-card-image-aspect-ratio);
+  border-radius: var(--fds-card-image-radius);
+  overflow: hidden;
+  background-color: var(--fds-color-surface-subtle);
+}
+
+.fds-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.fds-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fds-card-title {
+  margin: 0;
+  color: var(--fds-card-title-color);
+  font-size: var(--fds-card-title-font-size);
+  line-height: var(--fds-card-title-line-height);
+  font-weight: var(--fds-card-title-font-weight);
+  letter-spacing: -0.015em;
+}
+
+.fds-card-description {
+  margin: 0;
+  color: var(--fds-card-description-color);
+  font-size: var(--fds-card-description-font-size);
+  line-height: var(--fds-card-description-line-height);
+  font-weight: var(--fds-card-description-font-weight);
+}
