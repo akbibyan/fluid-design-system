@@ -4,7 +4,7 @@
  */
 
 export const cardTokens = {
-  padding: 'var(--fds-card-padding, var(--fds-space-inset-sm))',
+  padding: 'var(--fds-card-padding, var(--fds-space-inset-md))',
   background: 'var(--fds-card-bg, var(--fds-color-surface-default))',
   gap: 'var(--fds-card-gap, var(--fds-space-gap-tight))',
   border: {

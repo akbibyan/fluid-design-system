@@ -34,7 +34,7 @@ Tier 3 introduces component-scoped design tokens that bind Tier 2 semantic found
 
 ### Card Component (`.fds-card`)
 - **Tokens**:
-  - `--fds-card-padding`: `var(--fds-space-inset-sm)` (**8px padding all around**)
+  - `--fds-card-padding`: `var(--fds-space-inset-md)` (**16px padding all around**)
   - `--fds-card-bg`: `var(--fds-color-surface-default)`
   - `--fds-card-gap`: `var(--fds-space-gap-tight)` (8px internal gap)
   - `--fds-card-border-color`: `var(--fds-color-border-subtle)`

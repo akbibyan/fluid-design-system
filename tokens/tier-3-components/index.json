@@ -6,9 +6,9 @@
   "components": {
     "card": {
       "padding": {
-        "$value": "{space.inset.sm}",
+        "$value": "{space.inset.md}",
         "$type": "dimension",
-        "$description": "Uniform 8px padding around card container"
+        "$description": "Uniform 16px padding around card container"
       },
       "background": {
         "$value": "{color.surface.default}",
