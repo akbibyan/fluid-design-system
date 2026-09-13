@@ -1,42 +1,42 @@
 /**
- * Fluid Design System (FDS) - Tier 2 Semantic Tokens
+ * Fluid Design System (FDS) - Tier 2 Tokens
  * Generated CSS Custom Properties
  * Architecture Tier: 2 (Semantic / Alias)
  */
 
 /* ==========================================================================
-   Shared Semantic Variables (Layout, Radius, Spacing, Typography Roles)
+   Shared Alias Variables (Layout, Radius, Spacing)
    ========================================================================== */
 :root {
-  /* Semantic Layout Spacing */
-  --fds-semantic-space-page-gutter: var(--fds-spacing-300, 24px);
-  --fds-semantic-space-section-gap: var(--fds-spacing-800, 64px);
-  --fds-semantic-space-container-padding: var(--fds-spacing-400, 32px);
+  /* Layout Spacing */
+  --fds-space-page-gutter: var(--fds-spacing-300, 24px);
+  --fds-space-section-gap: var(--fds-spacing-800, 64px);
+  --fds-space-container-padding: var(--fds-spacing-400, 32px);
 
-  /* Semantic Insets */
-  --fds-semantic-space-inset-xs: var(--fds-spacing-050, 4px);
-  --fds-semantic-space-inset-sm: var(--fds-spacing-100, 8px);
-  --fds-semantic-space-inset-md: var(--fds-spacing-200, 16px);
-  --fds-semantic-space-inset-lg: var(--fds-spacing-300, 24px);
-  --fds-semantic-space-inset-xl: var(--fds-spacing-400, 32px);
+  /* Insets */
+  --fds-space-inset-xs: var(--fds-spacing-050, 4px);
+  --fds-space-inset-sm: var(--fds-spacing-100, 8px);
+  --fds-space-inset-md: var(--fds-spacing-200, 16px);
+  --fds-space-inset-lg: var(--fds-spacing-300, 24px);
+  --fds-space-inset-xl: var(--fds-spacing-400, 32px);
 
-  /* Semantic Gaps */
-  --fds-semantic-space-gap-tight: var(--fds-spacing-100, 8px);
-  --fds-semantic-space-gap-normal: var(--fds-spacing-200, 16px);
-  --fds-semantic-space-gap-relaxed: var(--fds-spacing-300, 24px);
-  --fds-semantic-space-gap-loose: var(--fds-spacing-400, 32px);
+  /* Gaps */
+  --fds-space-gap-tight: var(--fds-spacing-100, 8px);
+  --fds-space-gap-normal: var(--fds-spacing-200, 16px);
+  --fds-space-gap-relaxed: var(--fds-spacing-300, 24px);
+  --fds-space-gap-loose: var(--fds-spacing-400, 32px);
 
-  /* Semantic Radii */
-  --fds-semantic-radius-badge: var(--fds-radius-sm, 4px);
-  --fds-semantic-radius-control: var(--fds-radius-md, 8px);
-  --fds-semantic-radius-card: var(--fds-radius-lg, 12px);
-  --fds-semantic-radius-modal: var(--fds-radius-xl, 16px);
-  --fds-semantic-radius-pill: var(--fds-radius-full, 9999px);
+  /* Radii Aliases */
+  --fds-radius-badge: var(--fds-radius-sm, 4px);
+  --fds-radius-control: var(--fds-radius-md, 8px);
+  --fds-radius-card: var(--fds-radius-lg, 12px);
+  --fds-radius-modal: var(--fds-radius-xl, 16px);
+  --fds-radius-pill: var(--fds-radius-full, 9999px);
 
-  /* Semantic Border Widths */
-  --fds-semantic-border-width-divider: var(--fds-border-width-thin, 1px);
-  --fds-semantic-border-width-focus-ring: var(--fds-border-width-medium, 2px);
-  --fds-semantic-border-width-emphasis: var(--fds-border-width-thick, 4px);
+  /* Border Width Aliases */
+  --fds-border-width-divider: var(--fds-border-width-thin, 1px);
+  --fds-border-width-focus-ring: var(--fds-border-width-medium, 2px);
+  --fds-border-width-emphasis: var(--fds-border-width-thick, 4px);
 }
 
 /* ==========================================================================
@@ -45,70 +45,70 @@
 :root,
 [data-theme="light"] {
   /* Surfaces */
-  --fds-semantic-color-surface-canvas: var(--fds-color-neutral-50, #f8fafc);
-  --fds-semantic-color-surface-default: var(--fds-color-base-white, #ffffff);
-  --fds-semantic-color-surface-subtle: var(--fds-color-neutral-100, #f1f5f9);
-  --fds-semantic-color-surface-raised: var(--fds-color-base-white, #ffffff);
-  --fds-semantic-color-surface-overlay: var(--fds-color-base-white, #ffffff);
-  --fds-semantic-color-surface-sunken: var(--fds-color-neutral-100, #f1f5f9);
-  --fds-semantic-color-surface-inverse: var(--fds-color-neutral-900, #0f172a);
+  --fds-color-surface-canvas: var(--fds-color-neutral-50, #f8fafc);
+  --fds-color-surface-default: var(--fds-color-base-white, #ffffff);
+  --fds-color-surface-subtle: var(--fds-color-neutral-100, #f1f5f9);
+  --fds-color-surface-raised: var(--fds-color-base-white, #ffffff);
+  --fds-color-surface-overlay: var(--fds-color-base-white, #ffffff);
+  --fds-color-surface-sunken: var(--fds-color-neutral-100, #f1f5f9);
+  --fds-color-surface-inverse: var(--fds-color-neutral-900, #0f172a);
 
   /* Content (Text & Icons) */
-  --fds-semantic-color-content-primary: var(--fds-color-neutral-900, #0f172a);
-  --fds-semantic-color-content-secondary: var(--fds-color-neutral-600, #475569);
-  --fds-semantic-color-content-tertiary: var(--fds-color-neutral-400, #94a3b8);
-  --fds-semantic-color-content-disabled: var(--fds-color-neutral-300, #cbd5e1);
-  --fds-semantic-color-content-inverse: var(--fds-color-base-white, #ffffff);
-  --fds-semantic-color-content-brand: var(--fds-color-blue-600, #2563eb);
+  --fds-color-content-primary: var(--fds-color-neutral-900, #0f172a);
+  --fds-color-content-secondary: var(--fds-color-neutral-600, #475569);
+  --fds-color-content-tertiary: var(--fds-color-neutral-400, #94a3b8);
+  --fds-color-content-disabled: var(--fds-color-neutral-300, #cbd5e1);
+  --fds-color-content-inverse: var(--fds-color-base-white, #ffffff);
+  --fds-color-content-brand: var(--fds-color-blue-600, #2563eb);
 
   /* Borders */
-  --fds-semantic-color-border-subtle: var(--fds-color-neutral-200, #e2e8f0);
-  --fds-semantic-color-border-default: var(--fds-color-neutral-300, #cbd5e1);
-  --fds-semantic-color-border-strong: var(--fds-color-neutral-400, #94a3b8);
-  --fds-semantic-color-border-interactive: var(--fds-color-neutral-400, #94a3b8);
-  --fds-semantic-color-border-focus: var(--fds-color-blue-500, #3b82f6);
-  --fds-semantic-color-border-disabled: var(--fds-color-neutral-200, #e2e8f0);
+  --fds-color-border-subtle: var(--fds-color-neutral-200, #e2e8f0);
+  --fds-color-border-default: var(--fds-color-neutral-300, #cbd5e1);
+  --fds-color-border-strong: var(--fds-color-neutral-400, #94a3b8);
+  --fds-color-border-interactive: var(--fds-color-neutral-400, #94a3b8);
+  --fds-color-border-focus: var(--fds-color-blue-500, #3b82f6);
+  --fds-color-border-disabled: var(--fds-color-neutral-200, #e2e8f0);
 
   /* Interactive - Primary */
-  --fds-semantic-color-interactive-primary-default: var(--fds-color-blue-600, #2563eb);
-  --fds-semantic-color-interactive-primary-hover: var(--fds-color-blue-700, #1d4ed8);
-  --fds-semantic-color-interactive-primary-active: var(--fds-color-blue-800, #1e40af);
-  --fds-semantic-color-interactive-primary-subtle: var(--fds-color-blue-50, #eff6ff);
-  --fds-semantic-color-interactive-primary-muted: var(--fds-color-blue-100, #dbeafe);
+  --fds-color-interactive-primary-default: var(--fds-color-blue-600, #2563eb);
+  --fds-color-interactive-primary-hover: var(--fds-color-blue-700, #1d4ed8);
+  --fds-color-interactive-primary-active: var(--fds-color-blue-800, #1e40af);
+  --fds-color-interactive-primary-subtle: var(--fds-color-blue-50, #eff6ff);
+  --fds-color-interactive-primary-muted: var(--fds-color-blue-100, #dbeafe);
 
   /* Interactive - Neutral */
-  --fds-semantic-color-interactive-neutral-default: var(--fds-color-neutral-800, #1e293b);
-  --fds-semantic-color-interactive-neutral-hover: var(--fds-color-neutral-900, #0f172a);
-  --fds-semantic-color-interactive-neutral-active: var(--fds-color-neutral-950, #020617);
-  --fds-semantic-color-interactive-neutral-subtle: var(--fds-color-neutral-100, #f1f5f9);
+  --fds-color-interactive-neutral-default: var(--fds-color-neutral-800, #1e293b);
+  --fds-color-interactive-neutral-hover: var(--fds-color-neutral-900, #0f172a);
+  --fds-color-interactive-neutral-active: var(--fds-color-neutral-950, #020617);
+  --fds-color-interactive-neutral-subtle: var(--fds-color-neutral-100, #f1f5f9);
 
   /* Feedback - Success */
-  --fds-semantic-color-feedback-success-surface: var(--fds-color-green-50, #f0fdf4);
-  --fds-semantic-color-feedback-success-surface-subtle: var(--fds-color-green-100, #dcfce7);
-  --fds-semantic-color-feedback-success-text: var(--fds-color-green-700, #15803d);
-  --fds-semantic-color-feedback-success-border: var(--fds-color-green-300, #86efac);
-  --fds-semantic-color-feedback-success-icon: var(--fds-color-green-600, #16a34a);
+  --fds-color-feedback-success-surface: var(--fds-color-green-50, #f0fdf4);
+  --fds-color-feedback-success-surface-subtle: var(--fds-color-green-100, #dcfce7);
+  --fds-color-feedback-success-text: var(--fds-color-green-700, #15803d);
+  --fds-color-feedback-success-border: var(--fds-color-green-300, #86efac);
+  --fds-color-feedback-success-icon: var(--fds-color-green-600, #16a34a);
 
   /* Feedback - Warning */
-  --fds-semantic-color-feedback-warning-surface: var(--fds-color-orange-50, #fff7ed);
-  --fds-semantic-color-feedback-warning-surface-subtle: var(--fds-color-orange-100, #ffedd5);
-  --fds-semantic-color-feedback-warning-text: var(--fds-color-orange-700, #c2410c);
-  --fds-semantic-color-feedback-warning-border: var(--fds-color-orange-300, #fdba74);
-  --fds-semantic-color-feedback-warning-icon: var(--fds-color-orange-500, #f97316);
+  --fds-color-feedback-warning-surface: var(--fds-color-orange-50, #fff7ed);
+  --fds-color-feedback-warning-surface-subtle: var(--fds-color-orange-100, #ffedd5);
+  --fds-color-feedback-warning-text: var(--fds-color-orange-700, #c2410c);
+  --fds-color-feedback-warning-border: var(--fds-color-orange-300, #fdba74);
+  --fds-color-feedback-warning-icon: var(--fds-color-orange-500, #f97316);
 
   /* Feedback - Error */
-  --fds-semantic-color-feedback-error-surface: var(--fds-color-red-50, #fef2f2);
-  --fds-semantic-color-feedback-error-surface-subtle: var(--fds-color-red-100, #fee2e2);
-  --fds-semantic-color-feedback-error-text: var(--fds-color-red-700, #b91c1c);
-  --fds-semantic-color-feedback-error-border: var(--fds-color-red-300, #fca5a5);
-  --fds-semantic-color-feedback-error-icon: var(--fds-color-red-600, #dc2626);
+  --fds-color-feedback-error-surface: var(--fds-color-red-50, #fef2f2);
+  --fds-color-feedback-error-surface-subtle: var(--fds-color-red-100, #fee2e2);
+  --fds-color-feedback-error-text: var(--fds-color-red-700, #b91c1c);
+  --fds-color-feedback-error-border: var(--fds-color-red-300, #fca5a5);
+  --fds-color-feedback-error-icon: var(--fds-color-red-600, #dc2626);
 
   /* Feedback - Info */
-  --fds-semantic-color-feedback-info-surface: var(--fds-color-blue-50, #eff6ff);
-  --fds-semantic-color-feedback-info-surface-subtle: var(--fds-color-blue-100, #dbeafe);
-  --fds-semantic-color-feedback-info-text: var(--fds-color-blue-700, #1d4ed8);
-  --fds-semantic-color-feedback-info-border: var(--fds-color-blue-300, #93c5fd);
-  --fds-semantic-color-feedback-info-icon: var(--fds-color-blue-500, #3b82f6);
+  --fds-color-feedback-info-surface: var(--fds-color-blue-50, #eff6ff);
+  --fds-color-feedback-info-surface-subtle: var(--fds-color-blue-100, #dbeafe);
+  --fds-color-feedback-info-text: var(--fds-color-blue-700, #1d4ed8);
+  --fds-color-feedback-info-border: var(--fds-color-blue-300, #93c5fd);
+  --fds-color-feedback-info-icon: var(--fds-color-blue-500, #3b82f6);
 }
 
 /* ==========================================================================
@@ -116,68 +116,68 @@
    ========================================================================== */
 [data-theme="dark"] {
   /* Surfaces */
-  --fds-semantic-color-surface-canvas: var(--fds-color-neutral-950, #020617);
-  --fds-semantic-color-surface-default: var(--fds-color-neutral-900, #0f172a);
-  --fds-semantic-color-surface-subtle: var(--fds-color-neutral-800, #1e293b);
-  --fds-semantic-color-surface-raised: var(--fds-color-neutral-800, #1e293b);
-  --fds-semantic-color-surface-overlay: var(--fds-color-neutral-800, #1e293b);
-  --fds-semantic-color-surface-sunken: var(--fds-color-neutral-950, #020617);
-  --fds-semantic-color-surface-inverse: var(--fds-color-neutral-100, #f1f5f9);
+  --fds-color-surface-canvas: var(--fds-color-neutral-950, #020617);
+  --fds-color-surface-default: var(--fds-color-neutral-900, #0f172a);
+  --fds-color-surface-subtle: var(--fds-color-neutral-800, #1e293b);
+  --fds-color-surface-raised: var(--fds-color-neutral-800, #1e293b);
+  --fds-color-surface-overlay: var(--fds-color-neutral-800, #1e293b);
+  --fds-color-surface-sunken: var(--fds-color-neutral-950, #020617);
+  --fds-color-surface-inverse: var(--fds-color-neutral-100, #f1f5f9);
 
   /* Content (Text & Icons) */
-  --fds-semantic-color-content-primary: var(--fds-color-neutral-50, #f8fafc);
-  --fds-semantic-color-content-secondary: var(--fds-color-neutral-300, #cbd5e1);
-  --fds-semantic-color-content-tertiary: var(--fds-color-neutral-500, #64748b);
-  --fds-semantic-color-content-disabled: var(--fds-color-neutral-600, #475569);
-  --fds-semantic-color-content-inverse: var(--fds-color-neutral-950, #020617);
-  --fds-semantic-color-content-brand: var(--fds-color-blue-400, #60a5fa);
+  --fds-color-content-primary: var(--fds-color-neutral-50, #f8fafc);
+  --fds-color-content-secondary: var(--fds-color-neutral-300, #cbd5e1);
+  --fds-color-content-tertiary: var(--fds-color-neutral-500, #64748b);
+  --fds-color-content-disabled: var(--fds-color-neutral-600, #475569);
+  --fds-color-content-inverse: var(--fds-color-neutral-950, #020617);
+  --fds-color-content-brand: var(--fds-color-blue-400, #60a5fa);
 
   /* Borders */
-  --fds-semantic-color-border-subtle: var(--fds-color-neutral-800, #1e293b);
-  --fds-semantic-color-border-default: var(--fds-color-neutral-700, #334155);
-  --fds-semantic-color-border-strong: var(--fds-color-neutral-600, #475569);
-  --fds-semantic-color-border-interactive: var(--fds-color-neutral-600, #475569);
-  --fds-semantic-color-border-focus: var(--fds-color-blue-400, #60a5fa);
-  --fds-semantic-color-border-disabled: var(--fds-color-neutral-800, #1e293b);
+  --fds-color-border-subtle: var(--fds-color-neutral-800, #1e293b);
+  --fds-color-border-default: var(--fds-color-neutral-700, #334155);
+  --fds-color-border-strong: var(--fds-color-neutral-600, #475569);
+  --fds-color-border-interactive: var(--fds-color-neutral-600, #475569);
+  --fds-color-border-focus: var(--fds-color-blue-400, #60a5fa);
+  --fds-color-border-disabled: var(--fds-color-neutral-800, #1e293b);
 
   /* Interactive - Primary */
-  --fds-semantic-color-interactive-primary-default: var(--fds-color-blue-500, #3b82f6);
-  --fds-semantic-color-interactive-primary-hover: var(--fds-color-blue-400, #60a5fa);
-  --fds-semantic-color-interactive-primary-active: var(--fds-color-blue-600, #2563eb);
-  --fds-semantic-color-interactive-primary-subtle: var(--fds-color-blue-950, #172554);
-  --fds-semantic-color-interactive-primary-muted: var(--fds-color-blue-900, #1e3a8a);
+  --fds-color-interactive-primary-default: var(--fds-color-blue-500, #3b82f6);
+  --fds-color-interactive-primary-hover: var(--fds-color-blue-400, #60a5fa);
+  --fds-color-interactive-primary-active: var(--fds-color-blue-600, #2563eb);
+  --fds-color-interactive-primary-subtle: var(--fds-color-blue-950, #172554);
+  --fds-color-interactive-primary-muted: var(--fds-color-blue-900, #1e3a8a);
 
   /* Interactive - Neutral */
-  --fds-semantic-color-interactive-neutral-default: var(--fds-color-neutral-200, #e2e8f0);
-  --fds-semantic-color-interactive-neutral-hover: var(--fds-color-neutral-100, #f1f5f9);
-  --fds-semantic-color-interactive-neutral-active: var(--fds-color-neutral-50, #f8fafc);
-  --fds-semantic-color-interactive-neutral-subtle: var(--fds-color-neutral-800, #1e293b);
+  --fds-color-interactive-neutral-default: var(--fds-color-neutral-200, #e2e8f0);
+  --fds-color-interactive-neutral-hover: var(--fds-color-neutral-100, #f1f5f9);
+  --fds-color-interactive-neutral-active: var(--fds-color-neutral-50, #f8fafc);
+  --fds-color-interactive-neutral-subtle: var(--fds-color-neutral-800, #1e293b);
 
   /* Feedback - Success */
-  --fds-semantic-color-feedback-success-surface: var(--fds-color-green-950, #052e16);
-  --fds-semantic-color-feedback-success-surface-subtle: var(--fds-color-green-900, #14532d);
-  --fds-semantic-color-feedback-success-text: var(--fds-color-green-300, #86efac);
-  --fds-semantic-color-feedback-success-border: var(--fds-color-green-700, #15803d);
-  --fds-semantic-color-feedback-success-icon: var(--fds-color-green-400, #4ade80);
+  --fds-color-feedback-success-surface: var(--fds-color-green-950, #052e16);
+  --fds-color-feedback-success-surface-subtle: var(--fds-color-green-900, #14532d);
+  --fds-color-feedback-success-text: var(--fds-color-green-300, #86efac);
+  --fds-color-feedback-success-border: var(--fds-color-green-700, #15803d);
+  --fds-color-feedback-success-icon: var(--fds-color-green-400, #4ade80);
 
   /* Feedback - Warning */
-  --fds-semantic-color-feedback-warning-surface: var(--fds-color-orange-950, #431407);
-  --fds-semantic-color-feedback-warning-surface-subtle: var(--fds-color-orange-900, #7c2d12);
-  --fds-semantic-color-feedback-warning-text: var(--fds-color-orange-300, #fdba74);
-  --fds-semantic-color-feedback-warning-border: var(--fds-color-orange-700, #c2410c);
-  --fds-semantic-color-feedback-warning-icon: var(--fds-color-orange-400, #fb923c);
+  --fds-color-feedback-warning-surface: var(--fds-color-orange-950, #431407);
+  --fds-color-feedback-warning-surface-subtle: var(--fds-color-orange-900, #7c2d12);
+  --fds-color-feedback-warning-text: var(--fds-color-orange-300, #fdba74);
+  --fds-color-feedback-warning-border: var(--fds-color-orange-700, #c2410c);
+  --fds-color-feedback-warning-icon: var(--fds-color-orange-400, #fb923c);
 
   /* Feedback - Error */
-  --fds-semantic-color-feedback-error-surface: var(--fds-color-red-950, #450a0a);
-  --fds-semantic-color-feedback-error-surface-subtle: var(--fds-color-red-900, #7f1d1d);
-  --fds-semantic-color-feedback-error-text: var(--fds-color-red-300, #fca5a5);
-  --fds-semantic-color-feedback-error-border: var(--fds-color-red-700, #b91c1c);
-  --fds-semantic-color-feedback-error-icon: var(--fds-color-red-400, #f87171);
+  --fds-color-feedback-error-surface: var(--fds-color-red-950, #450a0a);
+  --fds-color-feedback-error-surface-subtle: var(--fds-color-red-900, #7f1d1d);
+  --fds-color-feedback-error-text: var(--fds-color-red-300, #fca5a5);
+  --fds-color-feedback-error-border: var(--fds-color-red-700, #b91c1c);
+  --fds-color-feedback-error-icon: var(--fds-color-red-400, #f87171);
 
   /* Feedback - Info */
-  --fds-semantic-color-feedback-info-surface: var(--fds-color-blue-950, #172554);
-  --fds-semantic-color-feedback-info-surface-subtle: var(--fds-color-blue-900, #1e3a8a);
-  --fds-semantic-color-feedback-info-text: var(--fds-color-blue-300, #93c5fd);
-  --fds-semantic-color-feedback-info-border: var(--fds-color-blue-700, #1d4ed8);
-  --fds-semantic-color-feedback-info-icon: var(--fds-color-blue-400, #60a5fa);
+  --fds-color-feedback-info-surface: var(--fds-color-blue-950, #172554);
+  --fds-color-feedback-info-surface-subtle: var(--fds-color-blue-900, #1e3a8a);
+  --fds-color-feedback-info-text: var(--fds-color-blue-300, #93c5fd);
+  --fds-color-feedback-info-border: var(--fds-color-blue-700, #1d4ed8);
+  --fds-color-feedback-info-icon: var(--fds-color-blue-400, #60a5fa);
 }

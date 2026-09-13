@@ -1,92 +1,90 @@
 {
   "$schema": "https://tr.designtokens.org/format/",
   "$description": "Tier 2 Semantic Typography Tokens",
-  "semantic": {
-    "typography": {
-      "display": {
+  "typography": {
+    "display": {
+      "fontFamily": "{typography.fontFamily.sans}",
+      "fontSize": "{typography.fontSize.heading-2xl}",
+      "lineHeight": "{typography.lineHeight.heading-2xl}",
+      "fontWeight": "{typography.fontWeight.bold}",
+      "letterSpacing": "{typography.letterSpacing.tighter}",
+      "$description": "Hero display typography"
+    },
+    "title": {
+      "fontFamily": "{typography.fontFamily.sans}",
+      "fontSize": "{typography.fontSize.heading-xl}",
+      "lineHeight": "{typography.lineHeight.heading-xl}",
+      "fontWeight": "{typography.fontWeight.bold}",
+      "letterSpacing": "{typography.letterSpacing.tighter}",
+      "$description": "Page title typography"
+    },
+    "headline": {
+      "fontFamily": "{typography.fontFamily.sans}",
+      "fontSize": "{typography.fontSize.heading-lg}",
+      "lineHeight": "{typography.lineHeight.heading-lg}",
+      "fontWeight": "{typography.fontWeight.bold}",
+      "letterSpacing": "{typography.letterSpacing.tight}",
+      "$description": "Section headline typography"
+    },
+    "subhead": {
+      "fontFamily": "{typography.fontFamily.sans}",
+      "fontSize": "{typography.fontSize.heading-sm}",
+      "lineHeight": "{typography.lineHeight.heading-sm}",
+      "fontWeight": "{typography.fontWeight.semibold}",
+      "letterSpacing": "{typography.letterSpacing.tight}",
+      "$description": "Subheading and card title typography"
+    },
+    "body": {
+      "default": {
         "fontFamily": "{typography.fontFamily.sans}",
-        "fontSize": "{typography.fontSize.heading-2xl}",
-        "lineHeight": "{typography.lineHeight.heading-2xl}",
-        "fontWeight": "{typography.fontWeight.bold}",
-        "letterSpacing": "{typography.letterSpacing.tighter}",
-        "$description": "Hero display typography"
+        "fontSize": "{typography.fontSize.body-md}",
+        "lineHeight": "{typography.lineHeight.body-md}",
+        "fontWeight": "{typography.fontWeight.regular}",
+        "letterSpacing": "{typography.letterSpacing.normal}",
+        "$description": "Default body text"
       },
-      "title": {
+      "strong": {
         "fontFamily": "{typography.fontFamily.sans}",
-        "fontSize": "{typography.fontSize.heading-xl}",
-        "lineHeight": "{typography.lineHeight.heading-xl}",
-        "fontWeight": "{typography.fontWeight.bold}",
-        "letterSpacing": "{typography.letterSpacing.tighter}",
-        "$description": "Page title typography"
-      },
-      "headline": {
-        "fontFamily": "{typography.fontFamily.sans}",
-        "fontSize": "{typography.fontSize.heading-lg}",
-        "lineHeight": "{typography.lineHeight.heading-lg}",
-        "fontWeight": "{typography.fontWeight.bold}",
-        "letterSpacing": "{typography.letterSpacing.tight}",
-        "$description": "Section headline typography"
-      },
-      "subhead": {
-        "fontFamily": "{typography.fontFamily.sans}",
-        "fontSize": "{typography.fontSize.heading-sm}",
-        "lineHeight": "{typography.lineHeight.heading-sm}",
+        "fontSize": "{typography.fontSize.body-md}",
+        "lineHeight": "{typography.lineHeight.body-md}",
         "fontWeight": "{typography.fontWeight.semibold}",
-        "letterSpacing": "{typography.letterSpacing.tight}",
-        "$description": "Subheading and card title typography"
+        "letterSpacing": "{typography.letterSpacing.normal}",
+        "$description": "Emphasized body text"
       },
-      "body": {
-        "default": {
-          "fontFamily": "{typography.fontFamily.sans}",
-          "fontSize": "{typography.fontSize.body-md}",
-          "lineHeight": "{typography.lineHeight.body-md}",
-          "fontWeight": "{typography.fontWeight.regular}",
-          "letterSpacing": "{typography.letterSpacing.normal}",
-          "$description": "Default body text"
-        },
-        "strong": {
-          "fontFamily": "{typography.fontFamily.sans}",
-          "fontSize": "{typography.fontSize.body-md}",
-          "lineHeight": "{typography.lineHeight.body-md}",
-          "fontWeight": "{typography.fontWeight.semibold}",
-          "letterSpacing": "{typography.letterSpacing.normal}",
-          "$description": "Emphasized body text"
-        },
-        "small": {
-          "fontFamily": "{typography.fontFamily.sans}",
-          "fontSize": "{typography.fontSize.body-sm}",
-          "lineHeight": "{typography.lineHeight.body-sm}",
-          "fontWeight": "{typography.fontWeight.regular}",
-          "letterSpacing": "{typography.letterSpacing.normal}",
-          "$description": "Compact secondary body text"
-        }
-      },
-      "caption": {
-        "default": {
-          "fontFamily": "{typography.fontFamily.sans}",
-          "fontSize": "{typography.fontSize.caption-md}",
-          "lineHeight": "{typography.lineHeight.caption-md}",
-          "fontWeight": "{typography.fontWeight.regular}",
-          "letterSpacing": "{typography.letterSpacing.normal}",
-          "$description": "Standard caption for labels and annotations"
-        },
-        "small": {
-          "fontFamily": "{typography.fontFamily.sans}",
-          "fontSize": "{typography.fontSize.caption-sm}",
-          "lineHeight": "{typography.lineHeight.caption-sm}",
-          "fontWeight": "{typography.fontWeight.regular}",
-          "letterSpacing": "{typography.letterSpacing.wide}",
-          "$description": "Small caption for timestamps and legal text"
-        }
-      },
-      "code": {
-        "fontFamily": "{typography.fontFamily.mono}",
+      "small": {
+        "fontFamily": "{typography.fontFamily.sans}",
         "fontSize": "{typography.fontSize.body-sm}",
         "lineHeight": "{typography.lineHeight.body-sm}",
         "fontWeight": "{typography.fontWeight.regular}",
         "letterSpacing": "{typography.letterSpacing.normal}",
-        "$description": "Monospace inline and block code"
+        "$description": "Compact secondary body text"
       }
+    },
+    "caption": {
+      "default": {
+        "fontFamily": "{typography.fontFamily.sans}",
+        "fontSize": "{typography.fontSize.caption-md}",
+        "lineHeight": "{typography.lineHeight.caption-md}",
+        "fontWeight": "{typography.fontWeight.regular}",
+        "letterSpacing": "{typography.letterSpacing.normal}",
+        "$description": "Standard caption for labels and annotations"
+      },
+      "small": {
+        "fontFamily": "{typography.fontFamily.sans}",
+        "fontSize": "{typography.fontSize.caption-sm}",
+        "lineHeight": "{typography.lineHeight.caption-sm}",
+        "fontWeight": "{typography.fontWeight.regular}",
+        "letterSpacing": "{typography.letterSpacing.wide}",
+        "$description": "Small caption for timestamps and legal text"
+      }
+    },
+    "code": {
+      "fontFamily": "{typography.fontFamily.mono}",
+      "fontSize": "{typography.fontSize.body-sm}",
+      "lineHeight": "{typography.lineHeight.body-sm}",
+      "fontWeight": "{typography.fontWeight.regular}",
+      "letterSpacing": "{typography.letterSpacing.normal}",
+      "$description": "Monospace inline and block code"
     }
   }
 }

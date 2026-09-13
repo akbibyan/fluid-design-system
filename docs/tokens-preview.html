@@ -16,16 +16,16 @@
 
     body {
       font-family: var(--fds-font-family-sans);
-      background-color: var(--fds-semantic-color-surface-canvas);
-      color: var(--fds-semantic-color-content-primary);
+      background-color: var(--fds-color-surface-canvas);
+      color: var(--fds-color-content-primary);
       line-height: 1.5;
-      padding: var(--fds-semantic-space-page-gutter);
+      padding: var(--fds-space-page-gutter);
     }
 
     header {
       max-width: 1200px;
       margin: 0 auto var(--fds-spacing-500);
-      border-bottom: var(--fds-semantic-border-width-divider) var(--fds-border-style-solid) var(--fds-semantic-color-border-subtle);
+      border-bottom: var(--fds-border-width-divider) var(--fds-border-style-solid) var(--fds-color-border-subtle);
       padding-bottom: var(--fds-spacing-300);
       display: flex;
       justify-content: space-between;
@@ -39,9 +39,9 @@
       padding: var(--fds-spacing-050) var(--fds-spacing-150);
       font-size: var(--fds-font-size-caption-sm);
       font-weight: var(--fds-font-weight-semibold);
-      background-color: var(--fds-semantic-color-interactive-primary-subtle);
-      color: var(--fds-semantic-color-interactive-primary-default);
-      border-radius: var(--fds-semantic-radius-pill);
+      background-color: var(--fds-color-interactive-primary-subtle);
+      color: var(--fds-color-interactive-primary-default);
+      border-radius: var(--fds-radius-pill);
       margin-bottom: var(--fds-spacing-100);
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -50,13 +50,13 @@
     h1 {
       font-size: var(--fds-font-size-heading-xl);
       font-weight: var(--fds-font-weight-bold);
-      color: var(--fds-semantic-color-content-primary);
+      color: var(--fds-color-content-primary);
       letter-spacing: var(--fds-letter-spacing-tighter);
     }
 
     .subtitle {
       font-size: var(--fds-font-size-body-lg);
-      color: var(--fds-semantic-color-content-secondary);
+      color: var(--fds-color-content-secondary);
       margin-top: var(--fds-spacing-050);
     }
 
@@ -74,16 +74,16 @@
       padding: var(--fds-spacing-100) var(--fds-spacing-250);
       font-size: var(--fds-font-size-body-sm);
       font-weight: var(--fds-font-weight-semibold);
-      border-radius: var(--fds-semantic-radius-control);
-      border: var(--fds-semantic-border-width-divider) var(--fds-border-style-solid) var(--fds-semantic-color-border-default);
-      background-color: var(--fds-semantic-color-surface-default);
-      color: var(--fds-semantic-color-content-primary);
+      border-radius: var(--fds-radius-control);
+      border: var(--fds-border-width-divider) var(--fds-border-style-solid) var(--fds-color-border-default);
+      background-color: var(--fds-color-surface-default);
+      color: var(--fds-color-content-primary);
       cursor: pointer;
       box-shadow: 0 1px 2px rgba(0,0,0,0.05);
     }
 
     .theme-toggle-btn:hover {
-      background-color: var(--fds-semantic-color-surface-subtle);
+      background-color: var(--fds-color-surface-subtle);
     }
 
     /* Navigation Pills */
@@ -100,15 +100,15 @@
       font-size: var(--fds-font-size-caption-md);
       font-weight: var(--fds-font-weight-semibold);
       padding: var(--fds-spacing-050) var(--fds-spacing-200);
-      border-radius: var(--fds-semantic-radius-pill);
-      background-color: var(--fds-semantic-color-surface-subtle);
-      color: var(--fds-semantic-color-content-secondary);
-      border: var(--fds-semantic-border-width-divider) var(--fds-border-style-solid) var(--fds-semantic-color-border-subtle);
+      border-radius: var(--fds-radius-pill);
+      background-color: var(--fds-color-surface-subtle);
+      color: var(--fds-color-content-secondary);
+      border: var(--fds-border-width-divider) var(--fds-border-style-solid) var(--fds-color-border-subtle);
     }
 
     .nav-pill:hover {
-      color: var(--fds-semantic-color-content-primary);
-      border-color: var(--fds-semantic-color-border-strong);
+      color: var(--fds-color-content-primary);
+      border-color: var(--fds-color-border-strong);
     }
 
     main {
@@ -116,7 +116,7 @@
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: var(--fds-semantic-space-section-gap);
+      gap: var(--fds-space-section-gap);
     }
 
     .tier-header {
@@ -125,7 +125,7 @@
       gap: var(--fds-spacing-150);
       margin-bottom: var(--fds-spacing-200);
       padding-bottom: var(--fds-spacing-100);
-      border-bottom: 2px solid var(--fds-semantic-color-interactive-primary-default);
+      border-bottom: 2px solid var(--fds-color-interactive-primary-default);
     }
 
     .tier-title {
@@ -134,10 +134,10 @@
     }
 
     section {
-      background: var(--fds-semantic-color-surface-default);
-      border-radius: var(--fds-semantic-radius-card);
-      border: var(--fds-semantic-border-width-divider) var(--fds-border-style-solid) var(--fds-semantic-color-border-subtle);
-      padding: var(--fds-semantic-space-container-padding);
+      background: var(--fds-color-surface-default);
+      border-radius: var(--fds-radius-card);
+      border: var(--fds-border-width-divider) var(--fds-border-style-solid) var(--fds-color-border-subtle);
+      padding: var(--fds-space-container-padding);
       box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
 
@@ -152,7 +152,7 @@
 
     section p.section-desc {
       font-size: var(--fds-font-size-body-sm);
-      color: var(--fds-semantic-color-content-secondary);
+      color: var(--fds-color-content-secondary);
       margin-bottom: var(--fds-spacing-300);
     }
 
@@ -165,8 +165,8 @@
 
     .surface-card {
       padding: var(--fds-spacing-300);
-      border-radius: var(--fds-semantic-radius-card);
-      border: var(--fds-semantic-border-width-divider) var(--fds-border-style-solid) var(--fds-semantic-color-border-subtle);
+      border-radius: var(--fds-radius-card);
+      border: var(--fds-border-width-divider) var(--fds-border-style-solid) var(--fds-color-border-subtle);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -198,8 +198,8 @@
       justify-content: space-between;
       align-items: center;
       padding: var(--fds-spacing-150);
-      border-radius: var(--fds-semantic-radius-control);
-      border-bottom: var(--fds-semantic-border-width-divider) var(--fds-border-style-solid) var(--fds-semantic-color-border-subtle);
+      border-radius: var(--fds-radius-control);
+      border-bottom: var(--fds-border-width-divider) var(--fds-border-style-solid) var(--fds-color-border-subtle);
     }
 
     /* Semantic Interactive Buttons */
@@ -215,55 +215,55 @@
       padding: var(--fds-spacing-150) var(--fds-spacing-300);
       font-size: var(--fds-font-size-body-sm);
       font-weight: var(--fds-font-weight-semibold);
-      border-radius: var(--fds-semantic-radius-control);
+      border-radius: var(--fds-radius-control);
       cursor: pointer;
       border: 1px solid transparent;
       outline: none;
     }
 
     .btn:focus-visible {
-      outline: var(--fds-semantic-border-width-focus-ring) solid var(--fds-semantic-color-border-focus);
+      outline: var(--fds-border-width-focus-ring) solid var(--fds-color-border-focus);
       outline-offset: 2px;
     }
 
     .btn-primary {
-      background-color: var(--fds-semantic-color-interactive-primary-default);
+      background-color: var(--fds-color-interactive-primary-default);
       color: var(--fds-color-base-white);
     }
     .btn-primary:hover {
-      background-color: var(--fds-semantic-color-interactive-primary-hover);
+      background-color: var(--fds-color-interactive-primary-hover);
     }
     .btn-primary:active {
-      background-color: var(--fds-semantic-color-interactive-primary-active);
+      background-color: var(--fds-color-interactive-primary-active);
     }
 
     .btn-subtle {
-      background-color: var(--fds-semantic-color-interactive-primary-subtle);
-      color: var(--fds-semantic-color-interactive-primary-default);
-      border-color: var(--fds-semantic-color-interactive-primary-muted);
+      background-color: var(--fds-color-interactive-primary-subtle);
+      color: var(--fds-color-interactive-primary-default);
+      border-color: var(--fds-color-interactive-primary-muted);
     }
     .btn-subtle:hover {
-      background-color: var(--fds-semantic-color-interactive-primary-muted);
+      background-color: var(--fds-color-interactive-primary-muted);
     }
 
     .btn-neutral {
-      background-color: var(--fds-semantic-color-interactive-neutral-default);
+      background-color: var(--fds-color-interactive-neutral-default);
       color: var(--fds-color-base-white);
     }
     .btn-neutral:hover {
-      background-color: var(--fds-semantic-color-interactive-neutral-hover);
+      background-color: var(--fds-color-interactive-neutral-hover);
     }
     .btn-neutral:active {
-      background-color: var(--fds-semantic-color-interactive-neutral-active);
+      background-color: var(--fds-color-interactive-neutral-active);
     }
 
     .btn-outlined {
       background-color: transparent;
-      border-color: var(--fds-semantic-color-border-interactive);
-      color: var(--fds-semantic-color-content-primary);
+      border-color: var(--fds-color-border-interactive);
+      color: var(--fds-color-content-primary);
     }
     .btn-outlined:hover {
-      background-color: var(--fds-semantic-color-surface-subtle);
+      background-color: var(--fds-color-surface-subtle);
     }
 
     /* Semantic Feedback Cards */
@@ -275,8 +275,8 @@
 
     .feedback-card {
       padding: var(--fds-spacing-250);
-      border-radius: var(--fds-semantic-radius-card);
-      border-width: var(--fds-semantic-border-width-divider);
+      border-radius: var(--fds-radius-card);
+      border-width: var(--fds-border-width-divider);
       border-style: solid;
       display: flex;
       flex-direction: column;
@@ -289,7 +289,7 @@
       gap: 6px;
       align-self: flex-start;
       padding: 4px 10px;
-      border-radius: var(--fds-semantic-radius-pill);
+      border-radius: var(--fds-radius-pill);
       font-size: var(--fds-font-size-caption-sm);
       font-weight: var(--fds-font-weight-bold);
       text-transform: uppercase;
@@ -304,8 +304,8 @@
 
     .radius-semantic-box {
       height: 100px;
-      background: var(--fds-semantic-color-surface-subtle);
-      border: var(--fds-semantic-border-width-divider) var(--fds-border-style-solid) var(--fds-semantic-color-border-default);
+      background: var(--fds-color-surface-subtle);
+      border: var(--fds-border-width-divider) var(--fds-border-style-solid) var(--fds-color-border-default);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -313,7 +313,7 @@
       text-align: center;
       font-size: var(--fds-font-size-body-sm);
       font-weight: var(--fds-font-weight-semibold);
-      color: var(--fds-semantic-color-content-primary);
+      color: var(--fds-color-content-primary);
     }
 
     /* Color Ramps Grid */
@@ -337,7 +337,7 @@
     .swatch {
       border-radius: var(--fds-radius-md);
       overflow: hidden;
-      border: var(--fds-semantic-border-width-divider) var(--fds-border-style-solid) var(--fds-semantic-color-border-subtle);
+      border: var(--fds-border-width-divider) var(--fds-border-style-solid) var(--fds-color-border-subtle);
       cursor: pointer;
     }
 
@@ -352,18 +352,18 @@
 
     .swatch-info {
       padding: var(--fds-spacing-100);
-      background: var(--fds-semantic-color-surface-default);
+      background: var(--fds-color-surface-default);
       font-size: var(--fds-font-size-caption-sm);
     }
 
     .swatch-step {
       font-weight: var(--fds-font-weight-bold);
-      color: var(--fds-semantic-color-content-primary);
+      color: var(--fds-color-content-primary);
     }
 
     .swatch-hex {
       font-family: var(--fds-font-family-mono);
-      color: var(--fds-semantic-color-content-secondary);
+      color: var(--fds-color-content-secondary);
       font-size: 10px;
     }
 
@@ -376,13 +376,13 @@
     .typo-table th, .typo-table td {
       text-align: left;
       padding: var(--fds-spacing-200);
-      border-bottom: var(--fds-semantic-border-width-divider) var(--fds-border-style-solid) var(--fds-semantic-color-border-subtle);
+      border-bottom: var(--fds-border-width-divider) var(--fds-border-style-solid) var(--fds-color-border-subtle);
     }
 
     .typo-table th {
       font-size: var(--fds-font-size-caption-md);
       font-weight: var(--fds-font-weight-semibold);
-      color: var(--fds-semantic-color-content-secondary);
+      color: var(--fds-color-content-secondary);
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
@@ -390,8 +390,8 @@
     .meta-code {
       font-family: var(--fds-font-family-mono);
       font-size: var(--fds-font-size-caption-sm);
-      color: var(--fds-semantic-color-content-secondary);
-      background: var(--fds-semantic-color-surface-subtle);
+      color: var(--fds-color-content-secondary);
+      background: var(--fds-color-surface-subtle);
       padding: 2px 6px;
       border-radius: var(--fds-radius-xs);
     }
@@ -413,12 +413,12 @@
       width: 220px;
       font-size: var(--fds-font-size-body-sm);
       font-family: var(--fds-font-family-mono);
-      color: var(--fds-semantic-color-content-secondary);
+      color: var(--fds-color-content-secondary);
     }
 
     .spacing-bar-wrapper {
       flex: 1;
-      background: var(--fds-semantic-color-surface-subtle);
+      background: var(--fds-color-surface-subtle);
       border-radius: var(--fds-radius-xs);
       height: 24px;
       display: flex;
@@ -426,7 +426,7 @@
     }
 
     .spacing-bar {
-      background: var(--fds-semantic-color-interactive-primary-default);
+      background: var(--fds-color-interactive-primary-default);
       height: 100%;
       border-radius: var(--fds-radius-xs);
     }
@@ -435,10 +435,10 @@
       position: fixed;
       bottom: 24px;
       right: 24px;
-      background: var(--fds-semantic-color-surface-inverse);
-      color: var(--fds-semantic-color-content-inverse);
+      background: var(--fds-color-surface-inverse);
+      color: var(--fds-color-content-inverse);
       padding: var(--fds-spacing-150) var(--fds-spacing-300);
-      border-radius: var(--fds-semantic-radius-pill);
+      border-radius: var(--fds-radius-pill);
       font-size: var(--fds-font-size-body-sm);
       opacity: 0;
       transform: translateY(10px);
@@ -495,33 +495,33 @@
       <p class="section-desc">Contextual surface hierarchy that automatically adapts when switching themes.</p>
       
       <div class="surface-grid">
-        <div class="surface-card" style="background: var(--fds-semantic-color-surface-canvas);" onclick="copyText('var(--fds-semantic-color-surface-canvas)')">
+        <div class="surface-card" style="background: var(--fds-color-surface-canvas);" onclick="copyText('var(--fds-color-surface-canvas)')">
           <div class="name">Canvas</div>
-          <div class="token-label">--fds-semantic-color-surface-canvas</div>
+          <div class="token-label">--fds-color-surface-canvas</div>
         </div>
-        <div class="surface-card" style="background: var(--fds-semantic-color-surface-default);" onclick="copyText('var(--fds-semantic-color-surface-default)')">
+        <div class="surface-card" style="background: var(--fds-color-surface-default);" onclick="copyText('var(--fds-color-surface-default)')">
           <div class="name">Default</div>
-          <div class="token-label">--fds-semantic-color-surface-default</div>
+          <div class="token-label">--fds-color-surface-default</div>
         </div>
-        <div class="surface-card" style="background: var(--fds-semantic-color-surface-subtle);" onclick="copyText('var(--fds-semantic-color-surface-subtle)')">
+        <div class="surface-card" style="background: var(--fds-color-surface-subtle);" onclick="copyText('var(--fds-color-surface-subtle)')">
           <div class="name">Subtle</div>
-          <div class="token-label">--fds-semantic-color-surface-subtle</div>
+          <div class="token-label">--fds-color-surface-subtle</div>
         </div>
-        <div class="surface-card" style="background: var(--fds-semantic-color-surface-raised); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);" onclick="copyText('var(--fds-semantic-color-surface-raised)')">
+        <div class="surface-card" style="background: var(--fds-color-surface-raised); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);" onclick="copyText('var(--fds-color-surface-raised)')">
           <div class="name">Raised (Elevated)</div>
-          <div class="token-label">--fds-semantic-color-surface-raised</div>
+          <div class="token-label">--fds-color-surface-raised</div>
         </div>
-        <div class="surface-card" style="background: var(--fds-semantic-color-surface-overlay); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.15);" onclick="copyText('var(--fds-semantic-color-surface-overlay)')">
+        <div class="surface-card" style="background: var(--fds-color-surface-overlay); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.15);" onclick="copyText('var(--fds-color-surface-overlay)')">
           <div class="name">Overlay (Modal)</div>
-          <div class="token-label">--fds-semantic-color-surface-overlay</div>
+          <div class="token-label">--fds-color-surface-overlay</div>
         </div>
-        <div class="surface-card" style="background: var(--fds-semantic-color-surface-sunken);" onclick="copyText('var(--fds-semantic-color-surface-sunken)')">
+        <div class="surface-card" style="background: var(--fds-color-surface-sunken);" onclick="copyText('var(--fds-color-surface-sunken)')">
           <div class="name">Sunken (Well)</div>
-          <div class="token-label">--fds-semantic-color-surface-sunken</div>
+          <div class="token-label">--fds-color-surface-sunken</div>
         </div>
-        <div class="surface-card" style="background: var(--fds-semantic-color-surface-inverse); color: var(--fds-semantic-color-content-inverse);" onclick="copyText('var(--fds-semantic-color-surface-inverse)')">
+        <div class="surface-card" style="background: var(--fds-color-surface-inverse); color: var(--fds-color-content-inverse);" onclick="copyText('var(--fds-color-surface-inverse)')">
           <div class="name">Inverse</div>
-          <div class="token-label">--fds-semantic-color-surface-inverse</div>
+          <div class="token-label">--fds-color-surface-inverse</div>
         </div>
       </div>
     </section>
@@ -534,42 +534,42 @@
       <div class="content-demo-list">
         <div class="content-demo-row">
           <div>
-            <div style="font-size: var(--fds-font-size-body-lg); font-weight: var(--fds-font-weight-bold); color: var(--fds-semantic-color-content-primary);">
+            <div style="font-size: var(--fds-font-size-body-lg); font-weight: var(--fds-font-weight-bold); color: var(--fds-color-content-primary);">
               Primary Content: High emphasis text for titles, headings, and primary body copy.
             </div>
-            <span class="meta-code">--fds-semantic-color-content-primary</span>
+            <span class="meta-code">--fds-color-content-primary</span>
           </div>
         </div>
         <div class="content-demo-row">
           <div>
-            <div style="font-size: var(--fds-font-size-body-md); color: var(--fds-semantic-color-content-secondary);">
+            <div style="font-size: var(--fds-font-size-body-md); color: var(--fds-color-content-secondary);">
               Secondary Content: Medium emphasis text for descriptions, subheadings, and supporting copy.
             </div>
-            <span class="meta-code">--fds-semantic-color-content-secondary</span>
+            <span class="meta-code">--fds-color-content-secondary</span>
           </div>
         </div>
         <div class="content-demo-row">
           <div>
-            <div style="font-size: var(--fds-font-size-body-sm); color: var(--fds-semantic-color-content-tertiary);">
+            <div style="font-size: var(--fds-font-size-body-sm); color: var(--fds-color-content-tertiary);">
               Tertiary Content: Low emphasis placeholders, timestamps, and subtle hints.
             </div>
-            <span class="meta-code">--fds-semantic-color-content-tertiary</span>
+            <span class="meta-code">--fds-color-content-tertiary</span>
           </div>
         </div>
         <div class="content-demo-row">
           <div>
-            <div style="font-size: var(--fds-font-size-body-sm); color: var(--fds-semantic-color-content-disabled);">
+            <div style="font-size: var(--fds-font-size-body-sm); color: var(--fds-color-content-disabled);">
               Disabled Content: Inactive labels and controls that cannot currently be interacted with.
             </div>
-            <span class="meta-code">--fds-semantic-color-content-disabled</span>
+            <span class="meta-code">--fds-color-content-disabled</span>
           </div>
         </div>
         <div class="content-demo-row">
           <div>
-            <div style="font-size: var(--fds-font-size-body-md); font-weight: var(--fds-font-weight-semibold); color: var(--fds-semantic-color-content-brand);">
+            <div style="font-size: var(--fds-font-size-body-md); font-weight: var(--fds-font-weight-semibold); color: var(--fds-color-content-brand);">
               Brand Content: Accentuated brand headlines and high-visibility links.
             </div>
-            <span class="meta-code">--fds-semantic-color-content-brand</span>
+            <span class="meta-code">--fds-color-content-brand</span>
           </div>
         </div>
       </div>
@@ -585,9 +585,9 @@
         <button class="btn btn-subtle">Subtle Primary</button>
         <button class="btn btn-neutral">Neutral Action</button>
         <button class="btn btn-outlined">Outlined Control</button>
-        <button class="btn" style="background: var(--fds-semantic-color-surface-subtle); color: var(--fds-semantic-color-content-disabled); cursor: not-allowed;" disabled>Disabled Action</button>
+        <button class="btn" style="background: var(--fds-color-surface-subtle); color: var(--fds-color-content-disabled); cursor: not-allowed;" disabled>Disabled Action</button>
       </div>
-      <p style="font-size: var(--fds-font-size-caption-md); color: var(--fds-semantic-color-content-secondary);">
+      <p style="font-size: var(--fds-font-size-caption-md); color: var(--fds-color-content-secondary);">
         Hover or click the buttons above to inspect the interactive token transitions.
       </p>
     </section>
@@ -599,8 +599,8 @@
       
       <div class="feedback-grid">
         <!-- Success -->
-        <div class="feedback-card" style="background: var(--fds-semantic-color-feedback-success-surface); border-color: var(--fds-semantic-color-feedback-success-border); color: var(--fds-semantic-color-feedback-success-text);">
-          <div class="feedback-chip" style="background: var(--fds-semantic-color-feedback-success-surface-subtle); color: var(--fds-semantic-color-feedback-success-text);">
+        <div class="feedback-card" style="background: var(--fds-color-feedback-success-surface); border-color: var(--fds-color-feedback-success-border); color: var(--fds-color-feedback-success-text);">
+          <div class="feedback-chip" style="background: var(--fds-color-feedback-success-surface-subtle); color: var(--fds-color-feedback-success-text);">
             <span>✓</span> Success
           </div>
           <div style="font-weight: var(--fds-font-weight-bold); font-size: var(--fds-font-size-body-md);">Action Completed</div>
@@ -608,8 +608,8 @@
         </div>
 
         <!-- Warning -->
-        <div class="feedback-card" style="background: var(--fds-semantic-color-feedback-warning-surface); border-color: var(--fds-semantic-color-feedback-warning-border); color: var(--fds-semantic-color-feedback-warning-text);">
-          <div class="feedback-chip" style="background: var(--fds-semantic-color-feedback-warning-surface-subtle); color: var(--fds-semantic-color-feedback-warning-text);">
+        <div class="feedback-card" style="background: var(--fds-color-feedback-warning-surface); border-color: var(--fds-color-feedback-warning-border); color: var(--fds-color-feedback-warning-text);">
+          <div class="feedback-chip" style="background: var(--fds-color-feedback-warning-surface-subtle); color: var(--fds-color-feedback-warning-text);">
             <span>⚠</span> Warning
           </div>
           <div style="font-weight: var(--fds-font-weight-bold); font-size: var(--fds-font-size-body-md);">Attention Required</div>
@@ -617,8 +617,8 @@
         </div>
 
         <!-- Error -->
-        <div class="feedback-card" style="background: var(--fds-semantic-color-feedback-error-surface); border-color: var(--fds-semantic-color-feedback-error-border); color: var(--fds-semantic-color-feedback-error-text);">
-          <div class="feedback-chip" style="background: var(--fds-semantic-color-feedback-error-surface-subtle); color: var(--fds-semantic-color-feedback-error-text);">
+        <div class="feedback-card" style="background: var(--fds-color-feedback-error-surface); border-color: var(--fds-color-feedback-error-border); color: var(--fds-color-feedback-error-text);">
+          <div class="feedback-chip" style="background: var(--fds-color-feedback-error-surface-subtle); color: var(--fds-color-feedback-error-text);">
             <span>✕</span> Error
           </div>
           <div style="font-weight: var(--fds-font-weight-bold); font-size: var(--fds-font-size-body-md);">Connection Failed</div>
@@ -626,8 +626,8 @@
         </div>
 
         <!-- Info -->
-        <div class="feedback-card" style="background: var(--fds-semantic-color-feedback-info-surface); border-color: var(--fds-semantic-color-feedback-info-border); color: var(--fds-semantic-color-feedback-info-text);">
-          <div class="feedback-chip" style="background: var(--fds-semantic-color-feedback-info-surface-subtle); color: var(--fds-semantic-color-feedback-info-text);">
+        <div class="feedback-card" style="background: var(--fds-color-feedback-info-surface); border-color: var(--fds-color-feedback-info-border); color: var(--fds-color-feedback-info-text);">
+          <div class="feedback-chip" style="background: var(--fds-color-feedback-info-surface-subtle); color: var(--fds-color-feedback-info-text);">
             <span>ℹ</span> Info
           </div>
           <div style="font-weight: var(--fds-font-weight-bold); font-size: var(--fds-font-size-body-md);">System Update</div>
@@ -642,23 +642,23 @@
       <p class="section-desc">Intent-driven radius assignments and layout spacing aliases.</p>
       
       <div class="radius-semantic-grid">
-        <div class="radius-semantic-box" style="border-radius: var(--fds-semantic-radius-badge);">
+        <div class="radius-semantic-box" style="border-radius: var(--fds-radius-badge);">
           <div>Badge Radius</div>
           <span class="meta-code">radius-badge (4px)</span>
         </div>
-        <div class="radius-semantic-box" style="border-radius: var(--fds-semantic-radius-control);">
+        <div class="radius-semantic-box" style="border-radius: var(--fds-radius-control);">
           <div>Control Radius</div>
           <span class="meta-code">radius-control (8px)</span>
         </div>
-        <div class="radius-semantic-box" style="border-radius: var(--fds-semantic-radius-card);">
+        <div class="radius-semantic-box" style="border-radius: var(--fds-radius-card);">
           <div>Card Radius</div>
           <span class="meta-code">radius-card (12px)</span>
         </div>
-        <div class="radius-semantic-box" style="border-radius: var(--fds-semantic-radius-modal);">
+        <div class="radius-semantic-box" style="border-radius: var(--fds-radius-modal);">
           <div>Modal Radius</div>
           <span class="meta-code">radius-modal (16px)</span>
         </div>
-        <div class="radius-semantic-box" style="border-radius: var(--fds-semantic-radius-pill); padding: 0 16px;">
+        <div class="radius-semantic-box" style="border-radius: var(--fds-radius-pill); padding: 0 16px;">
           <div>Pill Capsule</div>
           <span class="meta-code">radius-pill (9999px)</span>
         </div>

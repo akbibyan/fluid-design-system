@@ -33,21 +33,21 @@ Fluid Design System is built upon an extensible **3-tier design token architectu
 Tier 2 maps raw Tier 1 values to purposeful UI roles, enabling **Light & Dark mode themes** and consistent semantic composition.
 
 ### 1. Semantic Surfaces
-- `--fds-semantic-color-surface-canvas`: Base app page background
-- `--fds-semantic-color-surface-default`: Standard card & container background
-- `--fds-semantic-color-surface-subtle`: Subtle container fill
-- `--fds-semantic-color-surface-raised`: Elevated card & popover surface
-- `--fds-semantic-color-surface-overlay`: Modal dialog & sheet backdrop
-- `--fds-semantic-color-surface-sunken`: Inset well & code block background
-- `--fds-semantic-color-surface-inverse`: Inverted surface for toasts and banners
+- `--fds-color-surface-canvas`: Base app page background
+- `--fds-color-surface-default`: Standard card & container background
+- `--fds-color-surface-subtle`: Subtle container fill
+- `--fds-color-surface-raised`: Elevated card & popover surface
+- `--fds-color-surface-overlay`: Modal dialog & sheet backdrop
+- `--fds-color-surface-sunken`: Inset well & code block background
+- `--fds-color-surface-inverse`: Inverted surface for toasts and banners
 
 ### 2. Semantic Content (Text & Icons)
-- `--fds-semantic-color-content-primary`: High-emphasis body text and headings
-- `--fds-semantic-color-content-secondary`: Medium-emphasis descriptions
-- `--fds-semantic-color-content-tertiary`: Low-emphasis placeholders and hints
-- `--fds-semantic-color-content-disabled`: Inactive content
-- `--fds-semantic-color-content-inverse`: Text on inverted surfaces
-- `--fds-semantic-color-content-brand`: Brand-accentuated text
+- `--fds-color-content-primary`: High-emphasis body text and headings
+- `--fds-color-content-secondary`: Medium-emphasis descriptions
+- `--fds-color-content-tertiary`: Low-emphasis placeholders and hints
+- `--fds-color-content-disabled`: Inactive content
+- `--fds-color-content-inverse`: Text on inverted surfaces
+- `--fds-color-content-brand`: Brand-accentuated text
 
 ### 3. Semantic Interactive States
 - `primary`: `default`, `hover`, `active`, `subtle`, `muted`
@@ -88,22 +88,22 @@ Apply light or dark theme via `data-theme`:
 Example component styling:
 ```css
 .card {
-  background-color: var(--fds-semantic-color-surface-default);
-  color: var(--fds-semantic-color-content-primary);
-  border: var(--fds-semantic-border-width-divider) solid var(--fds-semantic-color-border-subtle);
-  border-radius: var(--fds-semantic-radius-card);
-  padding: var(--fds-semantic-space-inset-lg);
+  background-color: var(--fds-color-surface-default);
+  color: var(--fds-color-content-primary);
+  border: var(--fds-border-width-divider) solid var(--fds-color-border-subtle);
+  border-radius: var(--fds-radius-card);
+  padding: var(--fds-space-inset-lg);
 }
 
 .button-primary {
-  background-color: var(--fds-semantic-color-interactive-primary-default);
+  background-color: var(--fds-color-interactive-primary-default);
   color: var(--fds-color-base-white);
-  border-radius: var(--fds-semantic-radius-control);
-  padding: var(--fds-semantic-space-inset-sm) var(--fds-semantic-space-inset-md);
+  border-radius: var(--fds-radius-control);
+  padding: var(--fds-space-inset-sm) var(--fds-space-inset-md);
 }
 
 .button-primary:hover {
-  background-color: var(--fds-semantic-color-interactive-primary-hover);
+  background-color: var(--fds-color-interactive-primary-hover);
 }
 ```
 

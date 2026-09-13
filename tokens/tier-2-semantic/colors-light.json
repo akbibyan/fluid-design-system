@@ -1,77 +1,75 @@
 {
   "$schema": "https://tr.designtokens.org/format/",
-  "$description": "Tier 2 Semantic Color Tokens - Light Theme",
-  "semantic": {
-    "color": {
-      "surface": {
-        "canvas": { "$value": "{color.neutral.50}", "$type": "color", "$description": "Application background canvas" },
-        "default": { "$value": "{color.base.white}", "$type": "color", "$description": "Default card and container background" },
-        "subtle": { "$value": "{color.neutral.100}", "$type": "color", "$description": "Subtle container fill" },
-        "raised": { "$value": "{color.base.white}", "$type": "color", "$description": "Elevated card/popover surface" },
-        "overlay": { "$value": "{color.base.white}", "$type": "color", "$description": "Modal and dialog overlay surface" },
-        "sunken": { "$value": "{color.neutral.100}", "$type": "color", "$description": "Recessed wells and code areas" },
-        "inverse": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Inverted surface for toasts and banners" }
+  "$description": "Tier 2 Color Tokens - Light Theme",
+  "color": {
+    "surface": {
+      "canvas": { "$value": "{color.neutral.50}", "$type": "color", "$description": "Application background canvas" },
+      "default": { "$value": "{color.base.white}", "$type": "color", "$description": "Default card and container background" },
+      "subtle": { "$value": "{color.neutral.100}", "$type": "color", "$description": "Subtle container fill" },
+      "raised": { "$value": "{color.base.white}", "$type": "color", "$description": "Elevated card/popover surface" },
+      "overlay": { "$value": "{color.base.white}", "$type": "color", "$description": "Modal and dialog overlay surface" },
+      "sunken": { "$value": "{color.neutral.100}", "$type": "color", "$description": "Recessed wells and code areas" },
+      "inverse": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Inverted surface for toasts and banners" }
+    },
+    "content": {
+      "primary": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Primary high-emphasis text and icons" },
+      "secondary": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Secondary medium-emphasis text" },
+      "tertiary": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Tertiary low-emphasis captions and placeholders" },
+      "disabled": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Disabled state content" },
+      "inverse": { "$value": "{color.base.white}", "$type": "color", "$description": "Content on inverted surfaces" },
+      "brand": { "$value": "{color.blue.600}", "$type": "color", "$description": "Brand-accentuated text" }
+    },
+    "border": {
+      "subtle": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Soft divider borders" },
+      "default": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Standard container and input borders" },
+      "strong": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Strong emphasis borders" },
+      "interactive": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Border for interactive elements" },
+      "focus": { "$value": "{color.blue.500}", "$type": "color", "$description": "Focus ring outline color" },
+      "disabled": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Disabled element border" }
+    },
+    "interactive": {
+      "primary": {
+        "default": { "$value": "{color.blue.600}", "$type": "color", "$description": "Primary interactive action" },
+        "hover": { "$value": "{color.blue.700}", "$type": "color", "$description": "Primary action hover state" },
+        "active": { "$value": "{color.blue.800}", "$type": "color", "$description": "Primary action active/pressed state" },
+        "subtle": { "$value": "{color.blue.50}", "$type": "color", "$description": "Subtle tint for primary hover/select" },
+        "muted": { "$value": "{color.blue.100}", "$type": "color", "$description": "Muted primary background" }
       },
-      "content": {
-        "primary": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Primary high-emphasis text and icons" },
-        "secondary": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Secondary medium-emphasis text" },
-        "tertiary": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Tertiary low-emphasis captions and placeholders" },
-        "disabled": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Disabled state content" },
-        "inverse": { "$value": "{color.base.white}", "$type": "color", "$description": "Content on inverted surfaces" },
-        "brand": { "$value": "{color.blue.600}", "$type": "color", "$description": "Brand-accentuated text" }
+      "neutral": {
+        "default": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Neutral interactive button" },
+        "hover": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Neutral button hover" },
+        "active": { "$value": "{color.neutral.950}", "$type": "color", "$description": "Neutral button pressed" },
+        "subtle": { "$value": "{color.neutral.100}", "$type": "color", "$description": "Neutral subtle hover background" }
+      }
+    },
+    "feedback": {
+      "success": {
+        "surface": { "$value": "{color.green.50}", "$type": "color", "$description": "Success message background" },
+        "surfaceSubtle": { "$value": "{color.green.100}", "$type": "color", "$description": "Success badge background" },
+        "text": { "$value": "{color.green.700}", "$type": "color", "$description": "Success text" },
+        "border": { "$value": "{color.green.300}", "$type": "color", "$description": "Success border" },
+        "icon": { "$value": "{color.green.600}", "$type": "color", "$description": "Success indicator icon" }
       },
-      "border": {
-        "subtle": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Soft divider borders" },
-        "default": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Standard container and input borders" },
-        "strong": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Strong emphasis borders" },
-        "interactive": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Border for interactive elements" },
-        "focus": { "$value": "{color.blue.500}", "$type": "color", "$description": "Focus ring outline color" },
-        "disabled": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Disabled element border" }
+      "warning": {
+        "surface": { "$value": "{color.orange.50}", "$type": "color", "$description": "Warning message background" },
+        "surfaceSubtle": { "$value": "{color.orange.100}", "$type": "color", "$description": "Warning badge background" },
+        "text": { "$value": "{color.orange.700}", "$type": "color", "$description": "Warning text" },
+        "border": { "$value": "{color.orange.300}", "$type": "color", "$description": "Warning border" },
+        "icon": { "$value": "{color.orange.500}", "$type": "color", "$description": "Warning indicator icon" }
       },
-      "interactive": {
-        "primary": {
-          "default": { "$value": "{color.blue.600}", "$type": "color", "$description": "Primary interactive action" },
-          "hover": { "$value": "{color.blue.700}", "$type": "color", "$description": "Primary action hover state" },
-          "active": { "$value": "{color.blue.800}", "$type": "color", "$description": "Primary action active/pressed state" },
-          "subtle": { "$value": "{color.blue.50}", "$type": "color", "$description": "Subtle tint for primary hover/select" },
-          "muted": { "$value": "{color.blue.100}", "$type": "color", "$description": "Muted primary background" }
-        },
-        "neutral": {
-          "default": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Neutral interactive button" },
-          "hover": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Neutral button hover" },
-          "active": { "$value": "{color.neutral.950}", "$type": "color", "$description": "Neutral button pressed" },
-          "subtle": { "$value": "{color.neutral.100}", "$type": "color", "$description": "Neutral subtle hover background" }
-        }
+      "error": {
+        "surface": { "$value": "{color.red.50}", "$type": "color", "$description": "Error message background" },
+        "surfaceSubtle": { "$value": "{color.red.100}", "$type": "color", "$description": "Error badge background" },
+        "text": { "$value": "{color.red.700}", "$type": "color", "$description": "Error text" },
+        "border": { "$value": "{color.red.300}", "$type": "color", "$description": "Error border" },
+        "icon": { "$value": "{color.red.600}", "$type": "color", "$description": "Error indicator icon" }
       },
-      "feedback": {
-        "success": {
-          "surface": { "$value": "{color.green.50}", "$type": "color", "$description": "Success message background" },
-          "surfaceSubtle": { "$value": "{color.green.100}", "$type": "color", "$description": "Success badge background" },
-          "text": { "$value": "{color.green.700}", "$type": "color", "$description": "Success text" },
-          "border": { "$value": "{color.green.300}", "$type": "color", "$description": "Success border" },
-          "icon": { "$value": "{color.green.600}", "$type": "color", "$description": "Success indicator icon" }
-        },
-        "warning": {
-          "surface": { "$value": "{color.orange.50}", "$type": "color", "$description": "Warning message background" },
-          "surfaceSubtle": { "$value": "{color.orange.100}", "$type": "color", "$description": "Warning badge background" },
-          "text": { "$value": "{color.orange.700}", "$type": "color", "$description": "Warning text" },
-          "border": { "$value": "{color.orange.300}", "$type": "color", "$description": "Warning border" },
-          "icon": { "$value": "{color.orange.500}", "$type": "color", "$description": "Warning indicator icon" }
-        },
-        "error": {
-          "surface": { "$value": "{color.red.50}", "$type": "color", "$description": "Error message background" },
-          "surfaceSubtle": { "$value": "{color.red.100}", "$type": "color", "$description": "Error badge background" },
-          "text": { "$value": "{color.red.700}", "$type": "color", "$description": "Error text" },
-          "border": { "$value": "{color.red.300}", "$type": "color", "$description": "Error border" },
-          "icon": { "$value": "{color.red.600}", "$type": "color", "$description": "Error indicator icon" }
-        },
-        "info": {
-          "surface": { "$value": "{color.blue.50}", "$type": "color", "$description": "Info message background" },
-          "surfaceSubtle": { "$value": "{color.blue.100}", "$type": "color", "$description": "Info badge background" },
-          "text": { "$value": "{color.blue.700}", "$type": "color", "$description": "Info text" },
-          "border": { "$value": "{color.blue.300}", "$type": "color", "$description": "Info border" },
-          "icon": { "$value": "{color.blue.500}", "$type": "color", "$description": "Info indicator icon" }
-        }
+      "info": {
+        "surface": { "$value": "{color.blue.50}", "$type": "color", "$description": "Info message background" },
+        "surfaceSubtle": { "$value": "{color.blue.100}", "$type": "color", "$description": "Info badge background" },
+        "text": { "$value": "{color.blue.700}", "$type": "color", "$description": "Info text" },
+        "border": { "$value": "{color.blue.300}", "$type": "color", "$description": "Info border" },
+        "icon": { "$value": "{color.blue.500}", "$type": "color", "$description": "Info indicator icon" }
       }
     }
   }

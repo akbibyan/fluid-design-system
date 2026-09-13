@@ -1,11 +1,11 @@
 /**
- * Fluid Design System (FDS) - Tier 2 Semantic Tokens
+ * Fluid Design System (FDS) - Tier 2 Tokens
  * Architecture Tier: 2 (Semantic / Alias)
  */
 
 import { colors, spacing, radius, border, typography } from './primitives';
 
-export const semanticLight = {
+export const themeLight = {
   surface: {
     canvas: colors.neutral[50],
     default: colors.base.white,
@@ -78,7 +78,7 @@ export const semanticLight = {
   },
 } as const;
 
-export const semanticDark = {
+export const themeDark = {
   surface: {
     canvas: colors.neutral[950],
     default: colors.neutral[900],
@@ -151,7 +151,7 @@ export const semanticDark = {
   },
 } as const;
 
-export const semanticLayout = {
+export const layoutTokens = {
   space: {
     pageGutter: spacing[300],
     sectionGap: spacing[800],
@@ -184,5 +184,10 @@ export const semanticLayout = {
   },
 } as const;
 
-export type SemanticTheme = typeof semanticLight;
-export type SemanticLayout = typeof semanticLayout;
+// Compatibility aliases
+export const semanticLight = themeLight;
+export const semanticDark = themeDark;
+export const semanticLayout = layoutTokens;
+
+export type ThemeTokens = typeof themeLight;
+export type LayoutTokens = typeof layoutTokens;
