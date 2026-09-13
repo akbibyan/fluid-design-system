@@ -1,0 +1,170 @@
+/**
+ * Fluid Design System (FDS) - Tier 1 Global Primitives
+ * Generated CSS Custom Properties
+ * Architecture Tier: 1 (Global / Primitives)
+ */
+
+:root {
+  /* ==========================================================================
+     Colors - Base
+     ========================================================================== */
+  --fds-color-base-white: #ffffff;
+  --fds-color-base-black: #000000;
+
+  /* Colors - Neutral (50-950) */
+  --fds-color-neutral-50: #f8fafc;
+  --fds-color-neutral-100: #f1f5f9;
+  --fds-color-neutral-200: #e2e8f0;
+  --fds-color-neutral-300: #cbd5e1;
+  --fds-color-neutral-400: #94a3b8;
+  --fds-color-neutral-500: #64748b;
+  --fds-color-neutral-600: #475569;
+  --fds-color-neutral-700: #334155;
+  --fds-color-neutral-800: #1e293b;
+  --fds-color-neutral-900: #0f172a;
+  --fds-color-neutral-950: #020617;
+
+  /* Colors - Blue (50-950) */
+  --fds-color-blue-50: #eff6ff;
+  --fds-color-blue-100: #dbeafe;
+  --fds-color-blue-200: #bfdbfe;
+  --fds-color-blue-300: #93c5fd;
+  --fds-color-blue-400: #60a5fa;
+  --fds-color-blue-500: #3b82f6;
+  --fds-color-blue-600: #2563eb;
+  --fds-color-blue-700: #1d4ed8;
+  --fds-color-blue-800: #1e40af;
+  --fds-color-blue-900: #1e3a8a;
+  --fds-color-blue-950: #172554;
+
+  /* Colors - Green (50-950) */
+  --fds-color-green-50: #f0fdf4;
+  --fds-color-green-100: #dcfce7;
+  --fds-color-green-200: #bbf7d0;
+  --fds-color-green-300: #86efac;
+  --fds-color-green-400: #4ade80;
+  --fds-color-green-500: #22c55e;
+  --fds-color-green-600: #16a34a;
+  --fds-color-green-700: #15803d;
+  --fds-color-green-800: #166534;
+  --fds-color-green-900: #14532d;
+  --fds-color-green-950: #052e16;
+
+  /* Colors - Orange (50-950) */
+  --fds-color-orange-50: #fff7ed;
+  --fds-color-orange-100: #ffedd5;
+  --fds-color-orange-200: #fed7aa;
+  --fds-color-orange-300: #fdba74;
+  --fds-color-orange-400: #fb923c;
+  --fds-color-orange-500: #f97316;
+  --fds-color-orange-600: #ea580c;
+  --fds-color-orange-700: #c2410c;
+  --fds-color-orange-800: #9a3412;
+  --fds-color-orange-900: #7c2d12;
+  --fds-color-orange-950: #431407;
+
+  /* Colors - Red (50-950) */
+  --fds-color-red-50: #fef2f2;
+  --fds-color-red-100: #fee2e2;
+  --fds-color-red-200: #fecaca;
+  --fds-color-red-300: #fca5a5;
+  --fds-color-red-400: #f87171;
+  --fds-color-red-500: #ef4444;
+  --fds-color-red-600: #dc2626;
+  --fds-color-red-700: #b91c1c;
+  --fds-color-red-800: #991b1b;
+  --fds-color-red-900: #7f1d1d;
+  --fds-color-red-950: #450a0a;
+
+  /* ==========================================================================
+     Typography - Font Families
+     ========================================================================== */
+  --fds-font-family-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --fds-font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+
+  /* Typography - Font Weights */
+  --fds-font-weight-regular: 400;
+  --fds-font-weight-medium: 500;
+  --fds-font-weight-semibold: 600;
+  --fds-font-weight-bold: 700;
+
+  /* Typography - Font Sizes (Caption, Body, Heading) */
+  --fds-font-size-caption-sm: 11px;
+  --fds-font-size-caption-md: 12px;
+  --fds-font-size-body-sm: 14px;
+  --fds-font-size-body-md: 16px;
+  --fds-font-size-body-lg: 18px;
+  --fds-font-size-heading-xs: 20px;
+  --fds-font-size-heading-sm: 24px;
+  --fds-font-size-heading-md: 28px;
+  --fds-font-size-heading-lg: 32px;
+  --fds-font-size-heading-xl: 40px;
+  --fds-font-size-heading-2xl: 48px;
+
+  /* Typography - Line Heights */
+  --fds-line-height-caption-sm: 14px;
+  --fds-line-height-caption-md: 16px;
+  --fds-line-height-body-sm: 20px;
+  --fds-line-height-body-md: 24px;
+  --fds-line-height-body-lg: 28px;
+  --fds-line-height-heading-xs: 28px;
+  --fds-line-height-heading-sm: 32px;
+  --fds-line-height-heading-md: 36px;
+  --fds-line-height-heading-lg: 40px;
+  --fds-line-height-heading-xl: 48px;
+  --fds-line-height-heading-2xl: 56px;
+
+  /* Typography - Letter Spacings */
+  --fds-letter-spacing-tighter: -0.04em;
+  --fds-letter-spacing-tight: -0.02em;
+  --fds-letter-spacing-normal: 0em;
+  --fds-letter-spacing-wide: 0.01em;
+
+  /* ==========================================================================
+     Spacing (8px Grid System)
+     ========================================================================== */
+  --fds-spacing-grid-base: 8px;
+  --fds-spacing-0: 0px;
+  --fds-spacing-050: 4px;   /* 0.5x grid unit */
+  --fds-spacing-100: 8px;   /* 1x grid unit */
+  --fds-spacing-150: 12px;  /* 1.5x grid unit */
+  --fds-spacing-200: 16px;  /* 2x grid unit */
+  --fds-spacing-250: 20px;  /* 2.5x grid unit */
+  --fds-spacing-300: 24px;  /* 3x grid unit */
+  --fds-spacing-400: 32px;  /* 4x grid unit */
+  --fds-spacing-500: 40px;  /* 5x grid unit */
+  --fds-spacing-600: 48px;  /* 6x grid unit */
+  --fds-spacing-700: 56px;  /* 7x grid unit */
+  --fds-spacing-800: 64px;  /* 8x grid unit */
+  --fds-spacing-900: 72px;  /* 9x grid unit */
+  --fds-spacing-1000: 80px; /* 10x grid unit */
+  --fds-spacing-1200: 96px; /* 12x grid unit */
+  --fds-spacing-1600: 128px;/* 16x grid unit */
+
+  /* ==========================================================================
+     Border Radius
+     ========================================================================== */
+  --fds-radius-none: 0px;
+  --fds-radius-xs: 2px;
+  --fds-radius-sm: 4px;
+  --fds-radius-md: 8px;
+  --fds-radius-lg: 12px;
+  --fds-radius-xl: 16px;
+  --fds-radius-2xl: 24px;
+  --fds-radius-3xl: 32px;
+  --fds-radius-full: 9999px;
+
+  /* ==========================================================================
+     Borders (Width & Style)
+     ========================================================================== */
+  --fds-border-width-none: 0px;
+  --fds-border-width-thin: 1px;
+  --fds-border-width-medium: 2px;
+  --fds-border-width-thick: 4px;
+  --fds-border-width-heavy: 8px;
+
+  --fds-border-style-solid: solid;
+  --fds-border-style-dashed: dashed;
+  --fds-border-style-dotted: dotted;
+  --fds-border-style-none: none;
+}

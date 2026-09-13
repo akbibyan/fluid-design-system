@@ -1,0 +1,20 @@
+{
+  "name": "@fluid-design-system/tokens",
+  "version": "1.0.0",
+  "description": "Fluid Design System - 3-Tier Design Token Architecture (Tier 1 Global Primitives)",
+  "main": "dist/ts/index.ts",
+  "style": "dist/css/global-primitives.css",
+  "scripts": {
+    "validate": "node -e \"const fs=require('fs'); ['colors','typography','spacing','radius','border','index'].forEach(f=>JSON.parse(fs.readFileSync('tokens/tier-1-primitives/'+f+'.json'))); console.log('All JSON tokens valid.');\""
+  },
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "fluid-design-system",
+    "dtcg",
+    "tokens",
+    "css-variables"
+  ],
+  "author": "Fluid Design System Team",
+  "license": "MIT"
+}

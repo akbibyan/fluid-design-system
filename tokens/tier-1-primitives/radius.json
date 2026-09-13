@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "radius": {
+    "none": { "$value": "0px", "$type": "dimension", "$description": "No border radius" },
+    "xs": { "$value": "2px", "$type": "dimension", "$description": "2px extra small radius" },
+    "sm": { "$value": "4px", "$type": "dimension", "$description": "4px small radius (tags, small badges)" },
+    "md": { "$value": "8px", "$type": "dimension", "$description": "8px medium radius (buttons, inputs, cards)" },
+    "lg": { "$value": "12px", "$type": "dimension", "$description": "12px large radius (modals, large cards)" },
+    "xl": { "$value": "16px", "$type": "dimension", "$description": "16px extra large radius" },
+    "2xl": { "$value": "24px", "$type": "dimension", "$description": "24px 2x large radius" },
+    "3xl": { "$value": "32px", "$type": "dimension", "$description": "32px 3x large radius" },
+    "full": { "$value": "9999px", "$type": "dimension", "$description": "Pill / circular radius" }
+  }
+}

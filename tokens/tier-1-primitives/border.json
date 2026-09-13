@@ -1,0 +1,18 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "border": {
+    "width": {
+      "none": { "$value": "0px", "$type": "dimension", "$description": "No border width" },
+      "thin": { "$value": "1px", "$type": "dimension", "$description": "1px standard border width" },
+      "medium": { "$value": "2px", "$type": "dimension", "$description": "2px emphasis/focus ring border width" },
+      "thick": { "$value": "4px", "$type": "dimension", "$description": "4px thick border width" },
+      "heavy": { "$value": "8px", "$type": "dimension", "$description": "8px heavy border width" }
+    },
+    "style": {
+      "solid": { "$value": "solid", "$type": "string", "$description": "Solid border style" },
+      "dashed": { "$value": "dashed", "$type": "string", "$description": "Dashed border style" },
+      "dotted": { "$value": "dotted", "$type": "string", "$description": "Dotted border style" },
+      "none": { "$value": "none", "$type": "string", "$description": "No border style" }
+    }
+  }
+}

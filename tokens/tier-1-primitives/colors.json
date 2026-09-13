@@ -1,0 +1,82 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "color": {
+    "base": {
+      "white": {
+        "$value": "#ffffff",
+        "$type": "color",
+        "$description": "Absolute white primitive"
+      },
+      "black": {
+        "$value": "#000000",
+        "$type": "color",
+        "$description": "Absolute black primitive"
+      }
+    },
+    "neutral": {
+      "50": { "$value": "#f8fafc", "$type": "color", "$description": "Neutral 50" },
+      "100": { "$value": "#f1f5f9", "$type": "color", "$description": "Neutral 100" },
+      "200": { "$value": "#e2e8f0", "$type": "color", "$description": "Neutral 200" },
+      "300": { "$value": "#cbd5e1", "$type": "color", "$description": "Neutral 300" },
+      "400": { "$value": "#94a3b8", "$type": "color", "$description": "Neutral 400" },
+      "500": { "$value": "#64748b", "$type": "color", "$description": "Neutral 500" },
+      "600": { "$value": "#475569", "$type": "color", "$description": "Neutral 600" },
+      "700": { "$value": "#334155", "$type": "color", "$description": "Neutral 700" },
+      "800": { "$value": "#1e293b", "$type": "color", "$description": "Neutral 800" },
+      "900": { "$value": "#0f172a", "$type": "color", "$description": "Neutral 900" },
+      "950": { "$value": "#020617", "$type": "color", "$description": "Neutral 950" }
+    },
+    "blue": {
+      "50": { "$value": "#eff6ff", "$type": "color", "$description": "Blue 50" },
+      "100": { "$value": "#dbeafe", "$type": "color", "$description": "Blue 100" },
+      "200": { "$value": "#bfdbfe", "$type": "color", "$description": "Blue 200" },
+      "300": { "$value": "#93c5fd", "$type": "color", "$description": "Blue 300" },
+      "400": { "$value": "#60a5fa", "$type": "color", "$description": "Blue 400" },
+      "500": { "$value": "#3b82f6", "$type": "color", "$description": "Blue 500" },
+      "600": { "$value": "#2563eb", "$type": "color", "$description": "Blue 600" },
+      "700": { "$value": "#1d4ed8", "$type": "color", "$description": "Blue 700" },
+      "800": { "$value": "#1e40af", "$type": "color", "$description": "Blue 800" },
+      "900": { "$value": "#1e3a8a", "$type": "color", "$description": "Blue 900" },
+      "950": { "$value": "#172554", "$type": "color", "$description": "Blue 950" }
+    },
+    "green": {
+      "50": { "$value": "#f0fdf4", "$type": "color", "$description": "Green 50" },
+      "100": { "$value": "#dcfce7", "$type": "color", "$description": "Green 100" },
+      "200": { "$value": "#bbf7d0", "$type": "color", "$description": "Green 200" },
+      "300": { "$value": "#86efac", "$type": "color", "$description": "Green 300" },
+      "400": { "$value": "#4ade80", "$type": "color", "$description": "Green 400" },
+      "500": { "$value": "#22c55e", "$type": "color", "$description": "Green 500" },
+      "600": { "$value": "#16a34a", "$type": "color", "$description": "Green 600" },
+      "700": { "$value": "#15803d", "$type": "color", "$description": "Green 700" },
+      "800": { "$value": "#166534", "$type": "color", "$description": "Green 800" },
+      "900": { "$value": "#14532d", "$type": "color", "$description": "Green 900" },
+      "950": { "$value": "#052e16", "$type": "color", "$description": "Green 950" }
+    },
+    "orange": {
+      "50": { "$value": "#fff7ed", "$type": "color", "$description": "Orange 50" },
+      "100": { "$value": "#ffedd5", "$type": "color", "$description": "Orange 100" },
+      "200": { "$value": "#fed7aa", "$type": "color", "$description": "Orange 200" },
+      "300": { "$value": "#fdba74", "$type": "color", "$description": "Orange 300" },
+      "400": { "$value": "#fb923c", "$type": "color", "$description": "Orange 400" },
+      "500": { "$value": "#f97316", "$type": "color", "$description": "Orange 500" },
+      "600": { "$value": "#ea580c", "$type": "color", "$description": "Orange 600" },
+      "700": { "$value": "#c2410c", "$type": "color", "$description": "Orange 700" },
+      "800": { "$value": "#9a3412", "$type": "color", "$description": "Orange 800" },
+      "900": { "$value": "#7c2d12", "$type": "color", "$description": "Orange 900" },
+      "950": { "$value": "#431407", "$type": "color", "$description": "Orange 950" }
+    },
+    "red": {
+      "50": { "$value": "#fef2f2", "$type": "color", "$description": "Red 50" },
+      "100": { "$value": "#fee2e2", "$type": "color", "$description": "Red 100" },
+      "200": { "$value": "#fecaca", "$type": "color", "$description": "Red 200" },
+      "300": { "$value": "#fca5a5", "$type": "color", "$description": "Red 300" },
+      "400": { "$value": "#f87171", "$type": "color", "$description": "Red 400" },
+      "500": { "$value": "#ef4444", "$type": "color", "$description": "Red 500" },
+      "600": { "$value": "#dc2626", "$type": "color", "$description": "Red 600" },
+      "700": { "$value": "#b91c1c", "$type": "color", "$description": "Red 700" },
+      "800": { "$value": "#991b1b", "$type": "color", "$description": "Red 800" },
+      "900": { "$value": "#7f1d1d", "$type": "color", "$description": "Red 900" },
+      "950": { "$value": "#450a0a", "$type": "color", "$description": "Red 950" }
+    }
+  }
+}

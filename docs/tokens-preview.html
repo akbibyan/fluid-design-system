@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluid Design System - Tier 1 Global Primitives</title>
+  <link rel="stylesheet" href="../dist/css/global-primitives.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--fds-font-family-sans);
+      background-color: var(--fds-color-neutral-50);
+      color: var(--fds-color-neutral-900);
+      line-height: 1.5;
+      padding: var(--fds-spacing-500);
+    }
+
+    header {
+      max-width: 1200px;
+      margin: 0 auto var(--fds-spacing-500);
+      border-bottom: var(--fds-border-width-thin) var(--fds-border-style-solid) var(--fds-color-neutral-200);
+      padding-bottom: var(--fds-spacing-300);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: var(--fds-spacing-050) var(--fds-spacing-150);
+      font-size: var(--fds-font-size-caption-sm);
+      font-weight: var(--fds-font-weight-semibold);
+      background-color: var(--fds-color-blue-100);
+      color: var(--fds-color-blue-700);
+      border-radius: var(--fds-radius-full);
+      margin-bottom: var(--fds-spacing-100);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-size: var(--fds-font-size-heading-xl);
+      font-weight: var(--fds-font-weight-bold);
+      color: var(--fds-color-neutral-950);
+      letter-spacing: var(--fds-letter-spacing-tighter);
+    }
+
+    .subtitle {
+      font-size: var(--fds-font-size-body-lg);
+      color: var(--fds-color-neutral-600);
+      margin-top: var(--fds-spacing-050);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: var(--fds-spacing-600);
+    }
+
+    section {
+      background: var(--fds-color-base-white);
+      border-radius: var(--fds-radius-lg);
+      border: var(--fds-border-width-thin) var(--fds-border-style-solid) var(--fds-color-neutral-200);
+      padding: var(--fds-spacing-400);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      font-size: var(--fds-font-size-heading-md);
+      font-weight: var(--fds-font-weight-bold);
+      margin-bottom: var(--fds-spacing-100);
+      display: flex;
+      align-items: center;
+      gap: var(--fds-spacing-150);
+    }
+
+    section p.section-desc {
+      font-size: var(--fds-font-size-body-sm);
+      color: var(--fds-color-neutral-500);
+      margin-bottom: var(--fds-spacing-300);
+    }
+
+    /* Color Ramps Grid */
+    .palette-group {
+      margin-bottom: var(--fds-spacing-300);
+    }
+
+    .palette-title {
+      font-size: var(--fds-font-size-body-md);
+      font-weight: var(--fds-font-weight-semibold);
+      margin-bottom: var(--fds-spacing-150);
+      text-transform: capitalize;
+    }
+
+    .ramp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: var(--fds-spacing-100);
+    }
+
+    .swatch {
+      border-radius: var(--fds-radius-md);
+      overflow: hidden;
+      border: var(--fds-border-width-thin) var(--fds-border-style-solid) var(--fds-color-neutral-200);
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+
+    .swatch:hover {
+      transform: translateY(-2px);
+    }
+
+    .swatch-color {
+      height: 52px;
+      width: 100%;
+    }
+
+    .swatch-info {
+      padding: var(--fds-spacing-100);
+      background: var(--fds-color-base-white);
+      font-size: var(--fds-font-size-caption-sm);
+    }
+
+    .swatch-step {
+      font-weight: var(--fds-font-weight-bold);
+      color: var(--fds-color-neutral-800);
+    }
+
+    .swatch-hex {
+      font-family: var(--fds-font-family-mono);
+      color: var(--fds-color-neutral-500);
+      font-size: 10px;
+    }
+
+    /* Typography specimen table */
+    .typo-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .typo-table th, .typo-table td {
+      text-align: left;
+      padding: var(--fds-spacing-200);
+      border-bottom: var(--fds-border-width-thin) var(--fds-border-style-solid) var(--fds-color-neutral-200);
+    }
+
+    .typo-table th {
+      font-size: var(--fds-font-size-caption-md);
+      font-weight: var(--fds-font-weight-semibold);
+      color: var(--fds-color-neutral-500);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .meta-code {
+      font-family: var(--fds-font-family-mono);
+      font-size: var(--fds-font-size-caption-sm);
+      color: var(--fds-color-neutral-600);
+      background: var(--fds-color-neutral-100);
+      padding: 2px 6px;
+      border-radius: var(--fds-radius-xs);
+    }
+
+    /* Spacing Grid */
+    .spacing-container {
+      display: flex;
+      flex-direction: column;
+      gap: var(--fds-spacing-150);
+    }
+
+    .spacing-row {
+      display: flex;
+      align-items: center;
+      gap: var(--fds-spacing-200);
+    }
+
+    .spacing-label {
+      width: 180px;
+      font-size: var(--fds-font-size-body-sm);
+      font-family: var(--fds-font-family-mono);
+      color: var(--fds-color-neutral-700);
+    }
+
+    .spacing-bar-wrapper {
+      flex: 1;
+      background: var(--fds-color-neutral-100);
+      border-radius: var(--fds-radius-xs);
+      height: 24px;
+      display: flex;
+      align-items: center;
+    }
+
+    .spacing-bar {
+      background: var(--fds-color-blue-500);
+      height: 100%;
+      border-radius: var(--fds-radius-xs);
+    }
+
+    /* Radius & Border cards */
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: var(--fds-spacing-250);
+    }
+
+    .radius-box {
+      height: 90px;
+      background: var(--fds-color-blue-50);
+      border: var(--fds-border-width-medium) var(--fds-border-style-solid) var(--fds-color-blue-500);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--fds-font-size-caption-md);
+      font-weight: var(--fds-font-weight-semibold);
+      color: var(--fds-color-blue-900);
+      text-align: center;
+    }
+
+    .border-box {
+      height: 90px;
+      background: var(--fds-color-neutral-50);
+      border-color: var(--fds-color-neutral-800);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--fds-font-size-caption-md);
+      border-radius: var(--fds-radius-md);
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--fds-color-neutral-900);
+      color: var(--fds-color-base-white);
+      padding: var(--fds-spacing-150) var(--fds-spacing-300);
+      border-radius: var(--fds-radius-full);
+      font-size: var(--fds-font-size-body-sm);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.2s ease;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">Tier 1: Global Primitives</div>
+    <h1>Fluid Design System</h1>
+    <p class="subtitle">Foundational, context-agnostic design tokens (Colors 50-950, Typography, 8px Grid Spacing, Radius, Borders)</p>
+  </header>
+
+  <main>
+    <!-- Colors Section -->
+    <section id="colors">
+      <h2>🎨 Primitive Colors</h2>
+      <p class="section-desc">Ramp scales from 50 to 950 for Neutral, Blue, Green, Orange, and Red palettes, plus absolute Base tokens. Click any swatch to copy CSS variable.</p>
+      
+      <div id="palette-container"></div>
+    </section>
+
+    <!-- Typography Section -->
+    <section id="typography">
+      <h2>✍️ Typography Scale</h2>
+      <p class="section-desc">Hierarchical type scales covering Caption, Body, and Heading categories anchored to standard line heights.</p>
+      
+      <table class="typo-table">
+        <thead>
+          <tr>
+            <th>Token Name</th>
+            <th>Size / Line Height</th>
+            <th>Weight</th>
+            <th>Specimen</th>
+          </tr>
+        </thead>
+        <tbody id="typo-body">
+          <!-- Populated by JS -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Spacing Section -->
+    <section id="spacing">
+      <h2>📐 Spacing Scale (8px Grid)</h2>
+      <p class="section-desc">Grounded in an 8px grid rhythm with a 4px (0.5x) half-step for refined micro-spacing.</p>
+      <div class="spacing-container" id="spacing-container"></div>
+    </section>
+
+    <!-- Radius Section -->
+    <section id="radius">
+      <h2>🔘 Border Radius</h2>
+      <p class="section-desc">Standard curvature primitives ranging from none (0px) to full pill (9999px).</p>
+      <div class="demo-grid" id="radius-grid"></div>
+    </section>
+
+    <!-- Border Section -->
+    <section id="border">
+      <h2>🔲 Borders</h2>
+      <p class="section-desc">Border width and border style primitives for UI boundaries and emphasis outlines.</p>
+      <div class="demo-grid" id="border-grid"></div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <script>
+    const ramps = [
+      {
+        name: 'Neutral',
+        prefix: 'neutral',
+        colors: [
+          { step: '50', hex: '#f8fafc' }, { step: '100', hex: '#f1f5f9' },
+          { step: '200', hex: '#e2e8f0' }, { step: '300', hex: '#cbd5e1' },
+          { step: '400', hex: '#94a3b8' }, { step: '500', hex: '#64748b' },
+          { step: '600', hex: '#475569' }, { step: '700', hex: '#334155' },
+          { step: '800', hex: '#1e293b' }, { step: '900', hex: '#0f172a' },
+          { step: '950', hex: '#020617' }
+        ]
+      },
+      {
+        name: 'Blue (Primary / Action)',
+        prefix: 'blue',
+        colors: [
+          { step: '50', hex: '#eff6ff' }, { step: '100', hex: '#dbeafe' },
+          { step: '200', hex: '#bfdbfe' }, { step: '300', hex: '#93c5fd' },
+          { step: '400', hex: '#60a5fa' }, { step: '500', hex: '#3b82f6' },
+          { step: '600', hex: '#2563eb' }, { step: '700', hex: '#1d4ed8' },
+          { step: '800', hex: '#1e40af' }, { step: '900', hex: '#1e3a8a' },
+          { step: '950', hex: '#172554' }
+        ]
+      },
+      {
+        name: 'Green (Success)',
+        prefix: 'green',
+        colors: [
+          { step: '50', hex: '#f0fdf4' }, { step: '100', hex: '#dcfce7' },
+          { step: '200', hex: '#bbf7d0' }, { step: '300', hex: '#86efac' },
+          { step: '400', hex: '#4ade80' }, { step: '500', hex: '#22c55e' },
+          { step: '600', hex: '#16a34a' }, { step: '700', hex: '#15803d' },
+          { step: '800', hex: '#166534' }, { step: '900', hex: '#14532d' },
+          { step: '950', hex: '#052e16' }
+        ]
+      },
+      {
+        name: 'Orange (Warning / Accent)',
+        prefix: 'orange',
+        colors: [
+          { step: '50', hex: '#fff7ed' }, { step: '100', hex: '#ffedd5' },
+          { step: '200', hex: '#fed7aa' }, { step: '300', hex: '#fdba74' },
+          { step: '400', hex: '#fb923c' }, { step: '500', hex: '#f97316' },
+          { step: '600', hex: '#ea580c' }, { step: '700', hex: '#c2410c' },
+          { step: '800', hex: '#9a3412' }, { step: '900', hex: '#7c2d12' },
+          { step: '950', hex: '#431407' }
+        ]
+      },
+      {
+        name: 'Red (Destructive / Danger)',
+        prefix: 'red',
+        colors: [
+          { step: '50', hex: '#fef2f2' }, { step: '100', hex: '#fee2e2' },
+          { step: '200', hex: '#fecaca' }, { step: '300', hex: '#fca5a5' },
+          { step: '400', hex: '#f87171' }, { step: '500', hex: '#ef4444' },
+          { step: '600', hex: '#dc2626' }, { step: '700', hex: '#b91c1c' },
+          { step: '800', hex: '#991b1b' }, { step: '900', hex: '#7f1d1d' },
+          { step: '950', hex: '#450a0a' }
+        ]
+      }
+    ];
+
+    function copyText(txt) {
+      navigator.clipboard.writeText(txt);
+      const toast = document.getElementById('toast');
+      toast.textContent = `Copied: ${txt}`;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 1600);
+    }
+
+    // Render colors
+    const paletteContainer = document.getElementById('palette-container');
+    ramps.forEach(ramp => {
+      const group = document.createElement('div');
+      group.className = 'palette-group';
+      group.innerHTML = `<div class="palette-title">${ramp.name}</div>`;
+      
+      const grid = document.createElement('div');
+      grid.className = 'ramp-grid';
+
+      ramp.colors.forEach(item => {
+        const varName = `--fds-color-${ramp.prefix}-${item.step}`;
+        const swatch = document.createElement('div');
+        swatch.className = 'swatch';
+        swatch.onclick = () => copyText(`var(${varName})`);
+        swatch.innerHTML = `
+          <div class="swatch-color" style="background-color: var(${varName});"></div>
+          <div class="swatch-info">
+            <div class="swatch-step">${item.step}</div>
+            <div class="swatch-hex">${item.hex}</div>
+          </div>
+        `;
+        grid.appendChild(swatch);
+      });
+      group.appendChild(grid);
+      paletteContainer.appendChild(group);
+    });
+
+    // Render Typography
+    const typoItems = [
+      { name: 'heading-2xl', size: '48px', line: '56px', weight: '700', cat: 'Heading', text: 'Fluid Design System' },
+      { name: 'heading-xl', size: '40px', line: '48px', weight: '700', cat: 'Heading', text: 'Modern token architecture' },
+      { name: 'heading-lg', size: '32px', line: '40px', weight: '700', cat: 'Heading', text: 'Tier 1 Global Primitives' },
+      { name: 'heading-md', size: '28px', line: '36px', weight: '700', cat: 'Heading', text: 'Consistent visual foundations' },
+      { name: 'heading-sm', size: '24px', line: '32px', weight: '600', cat: 'Heading', text: 'Cross-platform interoperability' },
+      { name: 'heading-xs', size: '20px', line: '28px', weight: '600', cat: 'Heading', text: 'Subheadings and section headers' },
+      { name: 'body-lg', size: '18px', line: '28px', weight: '400', cat: 'Body', text: 'Large body copy for lead paragraphs and editorial content.' },
+      { name: 'body-md', size: '16px', line: '24px', weight: '400', cat: 'Body', text: 'Standard body text for readable UI experiences and regular content.' },
+      { name: 'body-sm', size: '14px', line: '20px', weight: '400', cat: 'Body', text: 'Secondary body copy for compact layouts, list items, and descriptions.' },
+      { name: 'caption-md', size: '12px', line: '16px', weight: '400', cat: 'Caption', text: 'Standard caption for badges, tooltips, and metadata.' },
+      { name: 'caption-sm', size: '11px', line: '14px', weight: '400', cat: 'Caption', text: 'Small caption text for timestamps and legal notices.' }
+    ];
+
+    const typoBody = document.getElementById('typo-body');
+    typoItems.forEach(item => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td><span class="meta-code">${item.name}</span></td>
+        <td>${item.size} / ${item.line}</td>
+        <td>${item.weight}</td>
+        <td>
+          <div style="font-size: var(--fds-font-size-${item.name}); line-height: var(--fds-line-height-${item.name}); font-weight: ${item.weight};">
+            ${item.text}
+          </div>
+        </td>
+      `;
+      typoBody.appendChild(row);
+    });
+
+    // Render Spacing
+    const spaces = [
+      { key: '0', px: '0px', mult: '0x' },
+      { key: '050', px: '4px', mult: '0.5x' },
+      { key: '100', px: '8px', mult: '1x (Base)' },
+      { key: '150', px: '12px', mult: '1.5x' },
+      { key: '200', px: '16px', mult: '2x' },
+      { key: '250', px: '20px', mult: '2.5x' },
+      { key: '300', px: '24px', mult: '3x' },
+      { key: '400', px: '32px', mult: '4x' },
+      { key: '500', px: '40px', mult: '5x' },
+      { key: '600', px: '48px', mult: '6x' },
+      { key: '700', px: '56px', mult: '7x' },
+      { key: '800', px: '64px', mult: '8x' },
+      { key: '900', px: '72px', mult: '9x' },
+      { key: '1000', px: '80px', mult: '10x' },
+      { key: '1200', px: '96px', mult: '12x' },
+      { key: '1600', px: '128px', mult: '16x' }
+    ];
+
+    const spacingContainer = document.getElementById('spacing-container');
+    spaces.forEach(s => {
+      const row = document.createElement('div');
+      row.className = 'spacing-row';
+      row.innerHTML = `
+        <div class="spacing-label">--fds-spacing-${s.key} (${s.px})</div>
+        <div class="spacing-bar-wrapper">
+          <div class="spacing-bar" style="width: var(--fds-spacing-${s.key});"></div>
+        </div>
+      `;
+      spacingContainer.appendChild(row);
+    });
+
+    // Render Radius
+    const radii = [
+      { name: 'none', val: '0px' },
+      { name: 'xs', val: '2px' },
+      { name: 'sm', val: '4px' },
+      { name: 'md', val: '8px' },
+      { name: 'lg', val: '12px' },
+      { name: 'xl', val: '16px' },
+      { name: '2xl', val: '24px' },
+      { name: '3xl', val: '32px' },
+      { name: 'full', val: '9999px' }
+    ];
+
+    const radiusGrid = document.getElementById('radius-grid');
+    radii.forEach(r => {
+      const box = document.createElement('div');
+      box.className = 'radius-box';
+      box.style.borderRadius = `var(--fds-radius-${r.name})`;
+      box.innerHTML = `<div>${r.name}</div><div style="font-size: 11px; font-weight: normal;">${r.val}</div>`;
+      radiusGrid.appendChild(box);
+    });
+
+    // Render Borders
+    const borders = [
+      { name: 'thin', style: 'solid', label: '1px solid' },
+      { name: 'medium', style: 'solid', label: '2px solid' },
+      { name: 'thick', style: 'solid', label: '4px solid' },
+      { name: 'heavy', style: 'solid', label: '8px solid' },
+      { name: 'medium', style: 'dashed', label: '2px dashed' },
+      { name: 'medium', style: 'dotted', label: '2px dotted' }
+    ];
+
+    const borderGrid = document.getElementById('border-grid');
+    borders.forEach(b => {
+      const box = document.createElement('div');
+      box.className = 'border-box';
+      box.style.borderWidth = `var(--fds-border-width-${b.name})`;
+      box.style.borderStyle = `var(--fds-border-style-${b.style})`;
+      box.innerHTML = `<div>${b.label}</div>`;
+      borderGrid.appendChild(box);
+    });
+  </script>
+</body>
+</html>
