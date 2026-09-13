@@ -1,0 +1,78 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "Tier 2 Semantic Color Tokens - Dark Theme",
+  "semantic": {
+    "color": {
+      "surface": {
+        "canvas": { "$value": "{color.neutral.950}", "$type": "color", "$description": "Application background canvas in dark mode" },
+        "default": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Default card and container background in dark mode" },
+        "subtle": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Subtle container fill in dark mode" },
+        "raised": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Elevated card/popover surface in dark mode" },
+        "overlay": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Modal and dialog overlay surface in dark mode" },
+        "sunken": { "$value": "{color.neutral.950}", "$type": "color", "$description": "Recessed wells and code areas in dark mode" },
+        "inverse": { "$value": "{color.neutral.100}", "$type": "color", "$description": "Inverted surface for toasts and banners in dark mode" }
+      },
+      "content": {
+        "primary": { "$value": "{color.neutral.50}", "$type": "color", "$description": "Primary high-emphasis text and icons in dark mode" },
+        "secondary": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Secondary medium-emphasis text in dark mode" },
+        "tertiary": { "$value": "{color.neutral.500}", "$type": "color", "$description": "Tertiary low-emphasis captions and placeholders in dark mode" },
+        "disabled": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Disabled state content in dark mode" },
+        "inverse": { "$value": "{color.neutral.950}", "$type": "color", "$description": "Content on inverted surfaces in dark mode" },
+        "brand": { "$value": "{color.blue.400}", "$type": "color", "$description": "Brand-accentuated text in dark mode" }
+      },
+      "border": {
+        "subtle": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Soft divider borders in dark mode" },
+        "default": { "$value": "{color.neutral.700}", "$type": "color", "$description": "Standard container and input borders in dark mode" },
+        "strong": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Strong emphasis borders in dark mode" },
+        "interactive": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Border for interactive elements in dark mode" },
+        "focus": { "$value": "{color.blue.400}", "$type": "color", "$description": "Focus ring outline color in dark mode" },
+        "disabled": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Disabled element border in dark mode" }
+      },
+      "interactive": {
+        "primary": {
+          "default": { "$value": "{color.blue.500}", "$type": "color", "$description": "Primary interactive action in dark mode" },
+          "hover": { "$value": "{color.blue.400}", "$type": "color", "$description": "Primary action hover state in dark mode" },
+          "active": { "$value": "{color.blue.600}", "$type": "color", "$description": "Primary action active/pressed state in dark mode" },
+          "subtle": { "$value": "{color.blue.950}", "$type": "color", "$description": "Subtle tint for primary hover/select in dark mode" },
+          "muted": { "$value": "{color.blue.900}", "$type": "color", "$description": "Muted primary background in dark mode" }
+        },
+        "neutral": {
+          "default": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Neutral interactive button in dark mode" },
+          "hover": { "$value": "{color.neutral.100}", "$type": "color", "$description": "Neutral button hover in dark mode" },
+          "active": { "$value": "{color.neutral.50}", "$type": "color", "$description": "Neutral button pressed in dark mode" },
+          "subtle": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Neutral subtle hover background in dark mode" }
+        }
+      },
+      "feedback": {
+        "success": {
+          "surface": { "$value": "{color.green.950}", "$type": "color", "$description": "Success message background in dark mode" },
+          "surfaceSubtle": { "$value": "{color.green.900}", "$type": "color", "$description": "Success badge background in dark mode" },
+          "text": { "$value": "{color.green.300}", "$type": "color", "$description": "Success text in dark mode" },
+          "border": { "$value": "{color.green.700}", "$type": "color", "$description": "Success border in dark mode" },
+          "icon": { "$value": "{color.green.400}", "$type": "color", "$description": "Success indicator icon in dark mode" }
+        },
+        "warning": {
+          "surface": { "$value": "{color.orange.950}", "$type": "color", "$description": "Warning message background in dark mode" },
+          "surfaceSubtle": { "$value": "{color.orange.900}", "$type": "color", "$description": "Warning badge background in dark mode" },
+          "text": { "$value": "{color.orange.300}", "$type": "color", "$description": "Warning text in dark mode" },
+          "border": { "$value": "{color.orange.700}", "$type": "color", "$description": "Warning border in dark mode" },
+          "icon": { "$value": "{color.orange.400}", "$type": "color", "$description": "Warning indicator icon in dark mode" }
+        },
+        "error": {
+          "surface": { "$value": "{color.red.950}", "$type": "color", "$description": "Error message background in dark mode" },
+          "surfaceSubtle": { "$value": "{color.red.900}", "$type": "color", "$description": "Error badge background in dark mode" },
+          "text": { "$value": "{color.red.300}", "$type": "color", "$description": "Error text in dark mode" },
+          "border": { "$value": "{color.red.700}", "$type": "color", "$description": "Error border in dark mode" },
+          "icon": { "$value": "{color.red.400}", "$type": "color", "$description": "Error indicator icon in dark mode" }
+        },
+        "info": {
+          "surface": { "$value": "{color.blue.950}", "$type": "color", "$description": "Info message background in dark mode" },
+          "surfaceSubtle": { "$value": "{color.blue.900}", "$type": "color", "$description": "Info badge background in dark mode" },
+          "text": { "$value": "{color.blue.300}", "$type": "color", "$description": "Info text in dark mode" },
+          "border": { "$value": "{color.blue.700}", "$type": "color", "$description": "Info border in dark mode" },
+          "icon": { "$value": "{color.blue.400}", "$type": "color", "$description": "Info indicator icon in dark mode" }
+        }
+      }
+    }
+  }
+}

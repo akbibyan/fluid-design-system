@@ -1,11 +1,11 @@
 {
   "name": "@fluid-design-system/tokens",
-  "version": "1.0.0",
-  "description": "Fluid Design System - 3-Tier Design Token Architecture (Tier 1 Global Primitives)",
+  "version": "1.1.0",
+  "description": "Fluid Design System - 3-Tier Design Token Architecture (Tier 1 Primitives & Tier 2 Semantics)",
   "main": "dist/ts/index.ts",
   "style": "dist/css/global-primitives.css",
   "scripts": {
-    "validate": "node -e \"const fs=require('fs'); ['colors','typography','spacing','radius','border','index'].forEach(f=>JSON.parse(fs.readFileSync('tokens/tier-1-primitives/'+f+'.json'))); console.log('All JSON tokens valid.');\""
+    "validate": "node -e \"const fs=require('fs'); ['colors','typography','spacing','radius','border','index'].forEach(f=>JSON.parse(fs.readFileSync('tokens/tier-1-primitives/'+f+'.json'))); ['colors-light','colors-dark','layout','typography','index'].forEach(f=>JSON.parse(fs.readFileSync('tokens/tier-2-semantic/'+f+'.json'))); console.log('All Tier 1 and Tier 2 JSON tokens valid.');\""
   },
   "keywords": [
     "design-system",
@@ -13,7 +13,9 @@
     "fluid-design-system",
     "dtcg",
     "tokens",
-    "css-variables"
+    "css-variables",
+    "dark-mode",
+    "semantic-tokens"
   ],
   "author": "Fluid Design System Team",
   "license": "MIT"

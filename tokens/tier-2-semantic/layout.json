@@ -1,0 +1,40 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "Tier 2 Semantic Layout Tokens - Spacing, Radius, and Border Aliases",
+  "semantic": {
+    "space": {
+      "layout": {
+        "pageGutter": { "$value": "{spacing.scale.300}", "$type": "dimension", "$description": "Standard page outer horizontal gutter (24px)" },
+        "sectionGap": { "$value": "{spacing.scale.800}", "$type": "dimension", "$description": "Vertical space between major page sections (64px)" },
+        "containerPadding": { "$value": "{spacing.scale.400}", "$type": "dimension", "$description": "Standard container inner padding (32px)" }
+      },
+      "inset": {
+        "xs": { "$value": "{spacing.scale.050}", "$type": "dimension", "$description": "Extra small inset padding (4px)" },
+        "sm": { "$value": "{spacing.scale.100}", "$type": "dimension", "$description": "Small component inset padding (8px)" },
+        "md": { "$value": "{spacing.scale.200}", "$type": "dimension", "$description": "Medium default component inset (16px)" },
+        "lg": { "$value": "{spacing.scale.300}", "$type": "dimension", "$description": "Large card inset (24px)" },
+        "xl": { "$value": "{spacing.scale.400}", "$type": "dimension", "$description": "Extra large panel inset (32px)" }
+      },
+      "gap": {
+        "tight": { "$value": "{spacing.scale.100}", "$type": "dimension", "$description": "Tight element grouping (8px)" },
+        "normal": { "$value": "{spacing.scale.200}", "$type": "dimension", "$description": "Standard element gap (16px)" },
+        "relaxed": { "$value": "{spacing.scale.300}", "$type": "dimension", "$description": "Relaxed element gap (24px)" },
+        "loose": { "$value": "{spacing.scale.400}", "$type": "dimension", "$description": "Loose component separation (32px)" }
+      }
+    },
+    "radius": {
+      "badge": { "$value": "{radius.sm}", "$type": "dimension", "$description": "Semantic radius for tags and small badges (4px)" },
+      "control": { "$value": "{radius.md}", "$type": "dimension", "$description": "Semantic radius for interactive controls like buttons and text fields (8px)" },
+      "card": { "$value": "{radius.lg}", "$type": "dimension", "$description": "Semantic radius for cards and container panels (12px)" },
+      "modal": { "$value": "{radius.xl}", "$type": "dimension", "$description": "Semantic radius for modal dialogs and sheets (16px)" },
+      "pill": { "$value": "{radius.full}", "$type": "dimension", "$description": "Semantic full pill/capsule radius (9999px)" }
+    },
+    "border": {
+      "width": {
+        "divider": { "$value": "{border.width.thin}", "$type": "dimension", "$description": "Divider and card border width (1px)" },
+        "focusRing": { "$value": "{border.width.medium}", "$type": "dimension", "$description": "Accessibility focus outline width (2px)" },
+        "emphasis": { "$value": "{border.width.thick}", "$type": "dimension", "$description": "Emphasis selection border width (4px)" }
+      }
+    }
+  }
+}

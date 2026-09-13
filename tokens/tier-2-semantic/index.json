@@ -1,0 +1,744 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$name": "Fluid Design System - Tier 2 Semantic Tokens",
+  "$description": "Purpose-driven alias tokens for theming, semantic layout, and accessible hierarchy.",
+  "$version": "1.0.0",
+  "themes": {
+    "light": {
+      "color": {
+        "surface": {
+          "canvas": {
+            "$value": "{color.neutral.50}",
+            "$type": "color",
+            "$description": "Application background canvas"
+          },
+          "default": {
+            "$value": "{color.base.white}",
+            "$type": "color",
+            "$description": "Default card and container background"
+          },
+          "subtle": {
+            "$value": "{color.neutral.100}",
+            "$type": "color",
+            "$description": "Subtle container fill"
+          },
+          "raised": {
+            "$value": "{color.base.white}",
+            "$type": "color",
+            "$description": "Elevated card/popover surface"
+          },
+          "overlay": {
+            "$value": "{color.base.white}",
+            "$type": "color",
+            "$description": "Modal and dialog overlay surface"
+          },
+          "sunken": {
+            "$value": "{color.neutral.100}",
+            "$type": "color",
+            "$description": "Recessed wells and code areas"
+          },
+          "inverse": {
+            "$value": "{color.neutral.900}",
+            "$type": "color",
+            "$description": "Inverted surface for toasts and banners"
+          }
+        },
+        "content": {
+          "primary": {
+            "$value": "{color.neutral.900}",
+            "$type": "color",
+            "$description": "Primary high-emphasis text and icons"
+          },
+          "secondary": {
+            "$value": "{color.neutral.600}",
+            "$type": "color",
+            "$description": "Secondary medium-emphasis text"
+          },
+          "tertiary": {
+            "$value": "{color.neutral.400}",
+            "$type": "color",
+            "$description": "Tertiary low-emphasis captions and placeholders"
+          },
+          "disabled": {
+            "$value": "{color.neutral.300}",
+            "$type": "color",
+            "$description": "Disabled state content"
+          },
+          "inverse": {
+            "$value": "{color.base.white}",
+            "$type": "color",
+            "$description": "Content on inverted surfaces"
+          },
+          "brand": {
+            "$value": "{color.blue.600}",
+            "$type": "color",
+            "$description": "Brand-accentuated text"
+          }
+        },
+        "border": {
+          "subtle": {
+            "$value": "{color.neutral.200}",
+            "$type": "color",
+            "$description": "Soft divider borders"
+          },
+          "default": {
+            "$value": "{color.neutral.300}",
+            "$type": "color",
+            "$description": "Standard container and input borders"
+          },
+          "strong": {
+            "$value": "{color.neutral.400}",
+            "$type": "color",
+            "$description": "Strong emphasis borders"
+          },
+          "interactive": {
+            "$value": "{color.neutral.400}",
+            "$type": "color",
+            "$description": "Border for interactive elements"
+          },
+          "focus": {
+            "$value": "{color.blue.500}",
+            "$type": "color",
+            "$description": "Focus ring outline color"
+          },
+          "disabled": {
+            "$value": "{color.neutral.200}",
+            "$type": "color",
+            "$description": "Disabled element border"
+          }
+        },
+        "interactive": {
+          "primary": {
+            "default": {
+              "$value": "{color.blue.600}",
+              "$type": "color",
+              "$description": "Primary interactive action"
+            },
+            "hover": {
+              "$value": "{color.blue.700}",
+              "$type": "color",
+              "$description": "Primary action hover state"
+            },
+            "active": {
+              "$value": "{color.blue.800}",
+              "$type": "color",
+              "$description": "Primary action active/pressed state"
+            },
+            "subtle": {
+              "$value": "{color.blue.50}",
+              "$type": "color",
+              "$description": "Subtle tint for primary hover/select"
+            },
+            "muted": {
+              "$value": "{color.blue.100}",
+              "$type": "color",
+              "$description": "Muted primary background"
+            }
+          },
+          "neutral": {
+            "default": {
+              "$value": "{color.neutral.800}",
+              "$type": "color",
+              "$description": "Neutral interactive button"
+            },
+            "hover": {
+              "$value": "{color.neutral.900}",
+              "$type": "color",
+              "$description": "Neutral button hover"
+            },
+            "active": {
+              "$value": "{color.neutral.950}",
+              "$type": "color",
+              "$description": "Neutral button pressed"
+            },
+            "subtle": {
+              "$value": "{color.neutral.100}",
+              "$type": "color",
+              "$description": "Neutral subtle hover background"
+            }
+          }
+        },
+        "feedback": {
+          "success": {
+            "surface": {
+              "$value": "{color.green.50}",
+              "$type": "color",
+              "$description": "Success message background"
+            },
+            "surfaceSubtle": {
+              "$value": "{color.green.100}",
+              "$type": "color",
+              "$description": "Success badge background"
+            },
+            "text": {
+              "$value": "{color.green.700}",
+              "$type": "color",
+              "$description": "Success text"
+            },
+            "border": {
+              "$value": "{color.green.300}",
+              "$type": "color",
+              "$description": "Success border"
+            },
+            "icon": {
+              "$value": "{color.green.600}",
+              "$type": "color",
+              "$description": "Success indicator icon"
+            }
+          },
+          "warning": {
+            "surface": {
+              "$value": "{color.orange.50}",
+              "$type": "color",
+              "$description": "Warning message background"
+            },
+            "surfaceSubtle": {
+              "$value": "{color.orange.100}",
+              "$type": "color",
+              "$description": "Warning badge background"
+            },
+            "text": {
+              "$value": "{color.orange.700}",
+              "$type": "color",
+              "$description": "Warning text"
+            },
+            "border": {
+              "$value": "{color.orange.300}",
+              "$type": "color",
+              "$description": "Warning border"
+            },
+            "icon": {
+              "$value": "{color.orange.500}",
+              "$type": "color",
+              "$description": "Warning indicator icon"
+            }
+          },
+          "error": {
+            "surface": {
+              "$value": "{color.red.50}",
+              "$type": "color",
+              "$description": "Error message background"
+            },
+            "surfaceSubtle": {
+              "$value": "{color.red.100}",
+              "$type": "color",
+              "$description": "Error badge background"
+            },
+            "text": {
+              "$value": "{color.red.700}",
+              "$type": "color",
+              "$description": "Error text"
+            },
+            "border": {
+              "$value": "{color.red.300}",
+              "$type": "color",
+              "$description": "Error border"
+            },
+            "icon": {
+              "$value": "{color.red.600}",
+              "$type": "color",
+              "$description": "Error indicator icon"
+            }
+          },
+          "info": {
+            "surface": {
+              "$value": "{color.blue.50}",
+              "$type": "color",
+              "$description": "Info message background"
+            },
+            "surfaceSubtle": {
+              "$value": "{color.blue.100}",
+              "$type": "color",
+              "$description": "Info badge background"
+            },
+            "text": {
+              "$value": "{color.blue.700}",
+              "$type": "color",
+              "$description": "Info text"
+            },
+            "border": {
+              "$value": "{color.blue.300}",
+              "$type": "color",
+              "$description": "Info border"
+            },
+            "icon": {
+              "$value": "{color.blue.500}",
+              "$type": "color",
+              "$description": "Info indicator icon"
+            }
+          }
+        }
+      }
+    },
+    "dark": {
+      "color": {
+        "surface": {
+          "canvas": {
+            "$value": "{color.neutral.950}",
+            "$type": "color",
+            "$description": "Application background canvas in dark mode"
+          },
+          "default": {
+            "$value": "{color.neutral.900}",
+            "$type": "color",
+            "$description": "Default card and container background in dark mode"
+          },
+          "subtle": {
+            "$value": "{color.neutral.800}",
+            "$type": "color",
+            "$description": "Subtle container fill in dark mode"
+          },
+          "raised": {
+            "$value": "{color.neutral.800}",
+            "$type": "color",
+            "$description": "Elevated card/popover surface in dark mode"
+          },
+          "overlay": {
+            "$value": "{color.neutral.800}",
+            "$type": "color",
+            "$description": "Modal and dialog overlay surface in dark mode"
+          },
+          "sunken": {
+            "$value": "{color.neutral.950}",
+            "$type": "color",
+            "$description": "Recessed wells and code areas in dark mode"
+          },
+          "inverse": {
+            "$value": "{color.neutral.100}",
+            "$type": "color",
+            "$description": "Inverted surface for toasts and banners in dark mode"
+          }
+        },
+        "content": {
+          "primary": {
+            "$value": "{color.neutral.50}",
+            "$type": "color",
+            "$description": "Primary high-emphasis text and icons in dark mode"
+          },
+          "secondary": {
+            "$value": "{color.neutral.300}",
+            "$type": "color",
+            "$description": "Secondary medium-emphasis text in dark mode"
+          },
+          "tertiary": {
+            "$value": "{color.neutral.500}",
+            "$type": "color",
+            "$description": "Tertiary low-emphasis captions and placeholders in dark mode"
+          },
+          "disabled": {
+            "$value": "{color.neutral.600}",
+            "$type": "color",
+            "$description": "Disabled state content in dark mode"
+          },
+          "inverse": {
+            "$value": "{color.neutral.950}",
+            "$type": "color",
+            "$description": "Content on inverted surfaces in dark mode"
+          },
+          "brand": {
+            "$value": "{color.blue.400}",
+            "$type": "color",
+            "$description": "Brand-accentuated text in dark mode"
+          }
+        },
+        "border": {
+          "subtle": {
+            "$value": "{color.neutral.800}",
+            "$type": "color",
+            "$description": "Soft divider borders in dark mode"
+          },
+          "default": {
+            "$value": "{color.neutral.700}",
+            "$type": "color",
+            "$description": "Standard container and input borders in dark mode"
+          },
+          "strong": {
+            "$value": "{color.neutral.600}",
+            "$type": "color",
+            "$description": "Strong emphasis borders in dark mode"
+          },
+          "interactive": {
+            "$value": "{color.neutral.600}",
+            "$type": "color",
+            "$description": "Border for interactive elements in dark mode"
+          },
+          "focus": {
+            "$value": "{color.blue.400}",
+            "$type": "color",
+            "$description": "Focus ring outline color in dark mode"
+          },
+          "disabled": {
+            "$value": "{color.neutral.800}",
+            "$type": "color",
+            "$description": "Disabled element border in dark mode"
+          }
+        },
+        "interactive": {
+          "primary": {
+            "default": {
+              "$value": "{color.blue.500}",
+              "$type": "color",
+              "$description": "Primary interactive action in dark mode"
+            },
+            "hover": {
+              "$value": "{color.blue.400}",
+              "$type": "color",
+              "$description": "Primary action hover state in dark mode"
+            },
+            "active": {
+              "$value": "{color.blue.600}",
+              "$type": "color",
+              "$description": "Primary action active/pressed state in dark mode"
+            },
+            "subtle": {
+              "$value": "{color.blue.950}",
+              "$type": "color",
+              "$description": "Subtle tint for primary hover/select in dark mode"
+            },
+            "muted": {
+              "$value": "{color.blue.900}",
+              "$type": "color",
+              "$description": "Muted primary background in dark mode"
+            }
+          },
+          "neutral": {
+            "default": {
+              "$value": "{color.neutral.200}",
+              "$type": "color",
+              "$description": "Neutral interactive button in dark mode"
+            },
+            "hover": {
+              "$value": "{color.neutral.100}",
+              "$type": "color",
+              "$description": "Neutral button hover in dark mode"
+            },
+            "active": {
+              "$value": "{color.neutral.50}",
+              "$type": "color",
+              "$description": "Neutral button pressed in dark mode"
+            },
+            "subtle": {
+              "$value": "{color.neutral.800}",
+              "$type": "color",
+              "$description": "Neutral subtle hover background in dark mode"
+            }
+          }
+        },
+        "feedback": {
+          "success": {
+            "surface": {
+              "$value": "{color.green.950}",
+              "$type": "color",
+              "$description": "Success message background in dark mode"
+            },
+            "surfaceSubtle": {
+              "$value": "{color.green.900}",
+              "$type": "color",
+              "$description": "Success badge background in dark mode"
+            },
+            "text": {
+              "$value": "{color.green.300}",
+              "$type": "color",
+              "$description": "Success text in dark mode"
+            },
+            "border": {
+              "$value": "{color.green.700}",
+              "$type": "color",
+              "$description": "Success border in dark mode"
+            },
+            "icon": {
+              "$value": "{color.green.400}",
+              "$type": "color",
+              "$description": "Success indicator icon in dark mode"
+            }
+          },
+          "warning": {
+            "surface": {
+              "$value": "{color.orange.950}",
+              "$type": "color",
+              "$description": "Warning message background in dark mode"
+            },
+            "surfaceSubtle": {
+              "$value": "{color.orange.900}",
+              "$type": "color",
+              "$description": "Warning badge background in dark mode"
+            },
+            "text": {
+              "$value": "{color.orange.300}",
+              "$type": "color",
+              "$description": "Warning text in dark mode"
+            },
+            "border": {
+              "$value": "{color.orange.700}",
+              "$type": "color",
+              "$description": "Warning border in dark mode"
+            },
+            "icon": {
+              "$value": "{color.orange.400}",
+              "$type": "color",
+              "$description": "Warning indicator icon in dark mode"
+            }
+          },
+          "error": {
+            "surface": {
+              "$value": "{color.red.950}",
+              "$type": "color",
+              "$description": "Error message background in dark mode"
+            },
+            "surfaceSubtle": {
+              "$value": "{color.red.900}",
+              "$type": "color",
+              "$description": "Error badge background in dark mode"
+            },
+            "text": {
+              "$value": "{color.red.300}",
+              "$type": "color",
+              "$description": "Error text in dark mode"
+            },
+            "border": {
+              "$value": "{color.red.700}",
+              "$type": "color",
+              "$description": "Error border in dark mode"
+            },
+            "icon": {
+              "$value": "{color.red.400}",
+              "$type": "color",
+              "$description": "Error indicator icon in dark mode"
+            }
+          },
+          "info": {
+            "surface": {
+              "$value": "{color.blue.950}",
+              "$type": "color",
+              "$description": "Info message background in dark mode"
+            },
+            "surfaceSubtle": {
+              "$value": "{color.blue.900}",
+              "$type": "color",
+              "$description": "Info badge background in dark mode"
+            },
+            "text": {
+              "$value": "{color.blue.300}",
+              "$type": "color",
+              "$description": "Info text in dark mode"
+            },
+            "border": {
+              "$value": "{color.blue.700}",
+              "$type": "color",
+              "$description": "Info border in dark mode"
+            },
+            "icon": {
+              "$value": "{color.blue.400}",
+              "$type": "color",
+              "$description": "Info indicator icon in dark mode"
+            }
+          }
+        }
+      }
+    }
+  },
+  "layout": {
+    "space": {
+      "layout": {
+        "pageGutter": {
+          "$value": "{spacing.scale.300}",
+          "$type": "dimension",
+          "$description": "Standard page outer horizontal gutter (24px)"
+        },
+        "sectionGap": {
+          "$value": "{spacing.scale.800}",
+          "$type": "dimension",
+          "$description": "Vertical space between major page sections (64px)"
+        },
+        "containerPadding": {
+          "$value": "{spacing.scale.400}",
+          "$type": "dimension",
+          "$description": "Standard container inner padding (32px)"
+        }
+      },
+      "inset": {
+        "xs": {
+          "$value": "{spacing.scale.050}",
+          "$type": "dimension",
+          "$description": "Extra small inset padding (4px)"
+        },
+        "sm": {
+          "$value": "{spacing.scale.100}",
+          "$type": "dimension",
+          "$description": "Small component inset padding (8px)"
+        },
+        "md": {
+          "$value": "{spacing.scale.200}",
+          "$type": "dimension",
+          "$description": "Medium default component inset (16px)"
+        },
+        "lg": {
+          "$value": "{spacing.scale.300}",
+          "$type": "dimension",
+          "$description": "Large card inset (24px)"
+        },
+        "xl": {
+          "$value": "{spacing.scale.400}",
+          "$type": "dimension",
+          "$description": "Extra large panel inset (32px)"
+        }
+      },
+      "gap": {
+        "tight": {
+          "$value": "{spacing.scale.100}",
+          "$type": "dimension",
+          "$description": "Tight element grouping (8px)"
+        },
+        "normal": {
+          "$value": "{spacing.scale.200}",
+          "$type": "dimension",
+          "$description": "Standard element gap (16px)"
+        },
+        "relaxed": {
+          "$value": "{spacing.scale.300}",
+          "$type": "dimension",
+          "$description": "Relaxed element gap (24px)"
+        },
+        "loose": {
+          "$value": "{spacing.scale.400}",
+          "$type": "dimension",
+          "$description": "Loose component separation (32px)"
+        }
+      }
+    },
+    "radius": {
+      "badge": {
+        "$value": "{radius.sm}",
+        "$type": "dimension",
+        "$description": "Semantic radius for tags and small badges (4px)"
+      },
+      "control": {
+        "$value": "{radius.md}",
+        "$type": "dimension",
+        "$description": "Semantic radius for interactive controls like buttons and text fields (8px)"
+      },
+      "card": {
+        "$value": "{radius.lg}",
+        "$type": "dimension",
+        "$description": "Semantic radius for cards and container panels (12px)"
+      },
+      "modal": {
+        "$value": "{radius.xl}",
+        "$type": "dimension",
+        "$description": "Semantic radius for modal dialogs and sheets (16px)"
+      },
+      "pill": {
+        "$value": "{radius.full}",
+        "$type": "dimension",
+        "$description": "Semantic full pill/capsule radius (9999px)"
+      }
+    },
+    "border": {
+      "width": {
+        "divider": {
+          "$value": "{border.width.thin}",
+          "$type": "dimension",
+          "$description": "Divider and card border width (1px)"
+        },
+        "focusRing": {
+          "$value": "{border.width.medium}",
+          "$type": "dimension",
+          "$description": "Accessibility focus outline width (2px)"
+        },
+        "emphasis": {
+          "$value": "{border.width.thick}",
+          "$type": "dimension",
+          "$description": "Emphasis selection border width (4px)"
+        }
+      }
+    }
+  },
+  "typography": {
+    "typography": {
+      "display": {
+        "fontFamily": "{typography.fontFamily.sans}",
+        "fontSize": "{typography.fontSize.heading-2xl}",
+        "lineHeight": "{typography.lineHeight.heading-2xl}",
+        "fontWeight": "{typography.fontWeight.bold}",
+        "letterSpacing": "{typography.letterSpacing.tighter}",
+        "$description": "Hero display typography"
+      },
+      "title": {
+        "fontFamily": "{typography.fontFamily.sans}",
+        "fontSize": "{typography.fontSize.heading-xl}",
+        "lineHeight": "{typography.lineHeight.heading-xl}",
+        "fontWeight": "{typography.fontWeight.bold}",
+        "letterSpacing": "{typography.letterSpacing.tighter}",
+        "$description": "Page title typography"
+      },
+      "headline": {
+        "fontFamily": "{typography.fontFamily.sans}",
+        "fontSize": "{typography.fontSize.heading-lg}",
+        "lineHeight": "{typography.lineHeight.heading-lg}",
+        "fontWeight": "{typography.fontWeight.bold}",
+        "letterSpacing": "{typography.letterSpacing.tight}",
+        "$description": "Section headline typography"
+      },
+      "subhead": {
+        "fontFamily": "{typography.fontFamily.sans}",
+        "fontSize": "{typography.fontSize.heading-sm}",
+        "lineHeight": "{typography.lineHeight.heading-sm}",
+        "fontWeight": "{typography.fontWeight.semibold}",
+        "letterSpacing": "{typography.letterSpacing.tight}",
+        "$description": "Subheading and card title typography"
+      },
+      "body": {
+        "default": {
+          "fontFamily": "{typography.fontFamily.sans}",
+          "fontSize": "{typography.fontSize.body-md}",
+          "lineHeight": "{typography.lineHeight.body-md}",
+          "fontWeight": "{typography.fontWeight.regular}",
+          "letterSpacing": "{typography.letterSpacing.normal}",
+          "$description": "Default body text"
+        },
+        "strong": {
+          "fontFamily": "{typography.fontFamily.sans}",
+          "fontSize": "{typography.fontSize.body-md}",
+          "lineHeight": "{typography.lineHeight.body-md}",
+          "fontWeight": "{typography.fontWeight.semibold}",
+          "letterSpacing": "{typography.letterSpacing.normal}",
+          "$description": "Emphasized body text"
+        },
+        "small": {
+          "fontFamily": "{typography.fontFamily.sans}",
+          "fontSize": "{typography.fontSize.body-sm}",
+          "lineHeight": "{typography.lineHeight.body-sm}",
+          "fontWeight": "{typography.fontWeight.regular}",
+          "letterSpacing": "{typography.letterSpacing.normal}",
+          "$description": "Compact secondary body text"
+        }
+      },
+      "caption": {
+        "default": {
+          "fontFamily": "{typography.fontFamily.sans}",
+          "fontSize": "{typography.fontSize.caption-md}",
+          "lineHeight": "{typography.lineHeight.caption-md}",
+          "fontWeight": "{typography.fontWeight.regular}",
+          "letterSpacing": "{typography.letterSpacing.normal}",
+          "$description": "Standard caption for labels and annotations"
+        },
+        "small": {
+          "fontFamily": "{typography.fontFamily.sans}",
+          "fontSize": "{typography.fontSize.caption-sm}",
+          "lineHeight": "{typography.lineHeight.caption-sm}",
+          "fontWeight": "{typography.fontWeight.regular}",
+          "letterSpacing": "{typography.letterSpacing.wide}",
+          "$description": "Small caption for timestamps and legal text"
+        }
+      },
+      "code": {
+        "fontFamily": "{typography.fontFamily.mono}",
+        "fontSize": "{typography.fontSize.body-sm}",
+        "lineHeight": "{typography.lineHeight.body-sm}",
+        "fontWeight": "{typography.fontWeight.regular}",
+        "letterSpacing": "{typography.letterSpacing.normal}",
+        "$description": "Monospace inline and block code"
+      }
+    }
+  }
+}
