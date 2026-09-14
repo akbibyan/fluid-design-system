@@ -228,42 +228,22 @@
     }
 
     .btn-primary {
-      background-color: var(--fds-color-interactive-primary-default);
-      color: var(--fds-color-base-white);
+      background-color: var(--fds-color-interactive-neutral-default);
+      color: var(--fds-color-content-inverse);
     }
     .btn-primary:hover {
-      background-color: var(--fds-color-interactive-primary-hover);
-    }
-    .btn-primary:active {
-      background-color: var(--fds-color-interactive-primary-active);
-    }
-
-    .btn-subtle {
-      background-color: var(--fds-color-interactive-primary-subtle);
-      color: var(--fds-color-interactive-primary-default);
-      border-color: var(--fds-color-interactive-primary-muted);
-    }
-    .btn-subtle:hover {
-      background-color: var(--fds-color-interactive-primary-muted);
-    }
-
-    .btn-neutral {
-      background-color: var(--fds-color-interactive-neutral-default);
-      color: var(--fds-color-base-white);
-    }
-    .btn-neutral:hover {
       background-color: var(--fds-color-interactive-neutral-hover);
     }
-    .btn-neutral:active {
+    .btn-primary:active {
       background-color: var(--fds-color-interactive-neutral-active);
     }
 
-    .btn-outlined {
+    .btn-subtle {
       background-color: transparent;
-      border-color: var(--fds-color-border-interactive);
       color: var(--fds-color-content-primary);
+      border-color: var(--fds-color-border-interactive);
     }
-    .btn-outlined:hover {
+    .btn-subtle:hover {
       background-color: var(--fds-color-surface-subtle);
     }
 
@@ -732,8 +712,6 @@
       <div class="interactive-demo-group">
         <button class="btn btn-primary">Primary Action</button>
         <button class="btn btn-subtle">Subtle Primary</button>
-        <button class="btn btn-neutral">Neutral Action</button>
-        <button class="btn btn-outlined">Outlined Control</button>
         <button class="btn" style="background: var(--fds-color-surface-subtle); color: var(--fds-color-content-disabled); cursor: not-allowed;" disabled>Disabled Action</button>
       </div>
       <p style="font-size: var(--fds-font-size-caption-md); color: var(--fds-color-content-secondary);">
