@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../dist/css/global-primitives.css">
   <link rel="stylesheet" href="../dist/css/semantic.css">
   <link rel="stylesheet" href="../dist/css/components/card.css">
+  <link rel="stylesheet" href="../dist/css/components/button.css">
   <style>
     * {
       box-sizing: border-box;
@@ -210,41 +211,6 @@
       flex-wrap: wrap;
       align-items: center;
       margin-bottom: var(--fds-spacing-300);
-    }
-
-    .btn {
-      padding: var(--fds-spacing-150) var(--fds-spacing-300);
-      font-size: var(--fds-font-size-body-sm);
-      font-weight: var(--fds-font-weight-semibold);
-      border-radius: var(--fds-radius-control);
-      cursor: pointer;
-      border: 1px solid transparent;
-      outline: none;
-    }
-
-    .btn:focus-visible {
-      outline: var(--fds-border-width-focus-ring) solid var(--fds-color-border-focus);
-      outline-offset: 2px;
-    }
-
-    .btn-primary {
-      background-color: var(--fds-color-interactive-neutral-default);
-      color: var(--fds-color-content-inverse);
-    }
-    .btn-primary:hover {
-      background-color: var(--fds-color-interactive-neutral-hover);
-    }
-    .btn-primary:active {
-      background-color: var(--fds-color-interactive-neutral-active);
-    }
-
-    .btn-subtle {
-      background-color: transparent;
-      color: var(--fds-color-content-primary);
-      border-color: var(--fds-color-border-interactive);
-    }
-    .btn-subtle:hover {
-      background-color: var(--fds-color-surface-subtle);
     }
 
     /* Semantic Feedback Cards */
@@ -707,12 +673,12 @@
     <!-- Semantic Interactive Controls -->
     <section id="semantic-interactive">
       <h2>⚡ Interactive States &amp; Controls</h2>
-      <p class="section-desc">Interactive action tokens mapping default, hover, active, and focus states.</p>
+      <p class="section-desc">Tier 3 button tokens map primary, secondary, and disabled variants to semantic color and state tokens.</p>
       
       <div class="interactive-demo-group">
-        <button class="btn btn-primary">Primary Action</button>
-        <button class="btn btn-subtle">Subtle Primary</button>
-        <button class="btn" style="background: var(--fds-color-surface-subtle); color: var(--fds-color-content-disabled); cursor: not-allowed;" disabled>Disabled Action</button>
+        <button class="fds-button fds-button--primary">Primary Action</button>
+        <button class="fds-button fds-button--secondary">Secondary Action</button>
+        <button class="fds-button fds-button--disabled" disabled>Disabled Action</button>
       </div>
       <p style="font-size: var(--fds-font-size-caption-md); color: var(--fds-color-content-secondary);">
         Hover or click the buttons above to inspect the interactive token transitions.

@@ -31,3 +31,40 @@ export const cardTokens = {
 } as const;
 
 export type CardTokens = typeof cardTokens;
+
+export const buttonTokens = {
+  padding: {
+    block: 'var(--fds-button-padding-block, var(--fds-spacing-150))',
+    inline: 'var(--fds-button-padding-inline, var(--fds-spacing-300))',
+  },
+  fontSize: 'var(--fds-button-font-size, var(--fds-font-size-body-sm))',
+  fontWeight: 'var(--fds-button-font-weight, var(--fds-font-weight-semibold))',
+  radius: 'var(--fds-button-radius, var(--fds-radius-control))',
+  borderWidth: 'var(--fds-button-border-width, var(--fds-border-width-divider))',
+  variant: {
+    primary: {
+      background: {
+        default: 'var(--fds-button-primary-background-default, var(--fds-color-interactive-neutral-default))',
+        hover: 'var(--fds-button-primary-background-hover, var(--fds-color-interactive-neutral-hover))',
+        active: 'var(--fds-button-primary-background-active, var(--fds-color-interactive-neutral-active))',
+      },
+      content: 'var(--fds-button-primary-content, var(--fds-color-content-inverse))',
+      border: 'var(--fds-button-primary-border, var(--fds-color-interactive-neutral-default))',
+    },
+    secondary: {
+      background: {
+        default: 'var(--fds-button-secondary-background-default, transparent)',
+        hover: 'var(--fds-button-secondary-background-hover, var(--fds-color-surface-subtle))',
+      },
+      content: 'var(--fds-button-secondary-content, var(--fds-color-content-primary))',
+      border: 'var(--fds-button-secondary-border, var(--fds-color-border-interactive))',
+    },
+    disabled: {
+      background: 'var(--fds-button-disabled-background, var(--fds-color-surface-subtle))',
+      content: 'var(--fds-button-disabled-content, var(--fds-color-content-disabled))',
+      border: 'var(--fds-button-disabled-border, var(--fds-color-border-disabled))',
+    },
+  },
+} as const;
+
+export type ButtonTokens = typeof buttonTokens;

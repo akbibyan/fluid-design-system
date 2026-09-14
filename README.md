@@ -28,9 +28,13 @@ Fluid Design System is built upon an extensible **3-tier design token architectu
 
 ---
 
-## Tier 3: Component Tokens & Card Component
+## Tier 3: Component Tokens
 
 Tier 3 introduces component-scoped design tokens that bind Tier 2 semantic foundations to concrete component structures.
+
+### Button Component (`.fds-button`)
+
+Button tokens provide three variants: Primary (neutral action surface), Secondary (outlined action, formerly labelled “Subtle Primary”), and Disabled. Import `dist/css/components/button.css` and use `fds-button--primary`, `fds-button--secondary`, or `fds-button--disabled` alongside `fds-button`.
 
 ### Card Component (`.fds-card`)
 - **Tokens**:
