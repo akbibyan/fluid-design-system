@@ -5,7 +5,7 @@
   "main": "dist/ts/index.ts",
   "style": "dist/css/global-primitives.css",
   "scripts": {
-    "validate": "node -e \"const fs=require('fs'); ['colors','typography','spacing','radius','border','index'].forEach(f=>JSON.parse(fs.readFileSync('tokens/tier-1-primitives/'+f+'.json'))); ['colors-light','colors-dark','layout','typography','index'].forEach(f=>JSON.parse(fs.readFileSync('tokens/tier-2-semantic/'+f+'.json'))); ['card','index'].forEach(f=>JSON.parse(fs.readFileSync('tokens/tier-3-components/'+f+'.json'))); console.log('All Tier 1, Tier 2, and Tier 3 JSON tokens valid.');\""
+    "validate": "node -e \"const fs=require('fs'); ['colors','typography','spacing','radius','border','index'].forEach(f=>JSON.parse(fs.readFileSync('tokens/tier-1-primitives/'+f+'.json'))); ['colors-light','colors-dark','layout','typography','index'].forEach(f=>JSON.parse(fs.readFileSync('tokens/tier-2-semantic/'+f+'.json'))); ['button','card','index'].forEach(f=>JSON.parse(fs.readFileSync('tokens/tier-3-components/'+f+'.json'))); console.log('All Tier 1, Tier 2, and Tier 3 JSON tokens valid.');\""
   },
   "keywords": [
     "design-system",

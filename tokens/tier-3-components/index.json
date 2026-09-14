@@ -98,6 +98,40 @@
           "$description": "Card description font weight (400)"
         }
       }
+    },
+    "button": {
+      "padding": {
+        "block": { "$value": "{spacing.150}", "$type": "dimension", "$description": "Vertical button padding (12px)" },
+        "inline": { "$value": "{spacing.300}", "$type": "dimension", "$description": "Horizontal button padding (24px)" }
+      },
+      "fontSize": { "$value": "{typography.fontSize.body-sm}", "$type": "dimension", "$description": "Button label font size (14px)" },
+      "fontWeight": { "$value": "{typography.fontWeight.semibold}", "$type": "fontWeight", "$description": "Button label font weight (600)" },
+      "radius": { "$value": "{radius.control}", "$type": "dimension", "$description": "Button corner radius (8px)" },
+      "borderWidth": { "$value": "{border.width.divider}", "$type": "dimension", "$description": "Button border width (1px)" },
+      "variant": {
+        "primary": {
+          "background": {
+            "default": { "$value": "{color.interactive.neutral.default}", "$type": "color", "$description": "Primary button background" },
+            "hover": { "$value": "{color.interactive.neutral.hover}", "$type": "color", "$description": "Primary button hover background" },
+            "active": { "$value": "{color.interactive.neutral.active}", "$type": "color", "$description": "Primary button active background" }
+          },
+          "content": { "$value": "{color.content.inverse}", "$type": "color", "$description": "Primary button label color" },
+          "border": { "$value": "{color.interactive.neutral.default}", "$type": "color", "$description": "Primary button border color" }
+        },
+        "secondary": {
+          "background": {
+            "default": { "$value": "transparent", "$type": "color", "$description": "Secondary button transparent background" },
+            "hover": { "$value": "{color.surface.subtle}", "$type": "color", "$description": "Secondary button hover background" }
+          },
+          "content": { "$value": "{color.content.primary}", "$type": "color", "$description": "Secondary button label color" },
+          "border": { "$value": "{color.border.interactive}", "$type": "color", "$description": "Secondary button outline color" }
+        },
+        "disabled": {
+          "background": { "$value": "{color.surface.subtle}", "$type": "color", "$description": "Disabled button background" },
+          "content": { "$value": "{color.content.disabled}", "$type": "color", "$description": "Disabled button label color" },
+          "border": { "$value": "{color.border.disabled}", "$type": "color", "$description": "Disabled button border color" }
+        }
+      }
     }
   }
 }

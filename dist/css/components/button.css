@@ -1,0 +1,78 @@
+/**
+ * Fluid Design System (FDS) - Button Component
+ * Architecture Tier: 3 (Component Tokens)
+ */
+
+.fds-button {
+  --fds-button-padding-block: var(--fds-spacing-150, 12px);
+  --fds-button-padding-inline: var(--fds-spacing-300, 24px);
+  --fds-button-font-size: var(--fds-font-size-body-sm, 14px);
+  --fds-button-font-weight: var(--fds-font-weight-semibold, 600);
+  --fds-button-radius: var(--fds-radius-control, 8px);
+  --fds-button-border-width: var(--fds-border-width-divider, 1px);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--fds-button-padding-block) var(--fds-button-padding-inline);
+  font: inherit;
+  font-size: var(--fds-button-font-size);
+  font-weight: var(--fds-button-font-weight);
+  line-height: 1.5;
+  color: var(--fds-button-content);
+  background-color: var(--fds-button-background);
+  border: var(--fds-button-border-width) solid var(--fds-button-border-color);
+  border-radius: var(--fds-button-radius);
+  cursor: pointer;
+}
+
+.fds-button:focus-visible {
+  outline: var(--fds-border-width-focus-ring, 2px) solid var(--fds-color-border-focus);
+  outline-offset: 2px;
+}
+
+.fds-button--primary {
+  --fds-button-primary-background-default: var(--fds-color-interactive-neutral-default);
+  --fds-button-primary-background-hover: var(--fds-color-interactive-neutral-hover);
+  --fds-button-primary-background-active: var(--fds-color-interactive-neutral-active);
+  --fds-button-primary-content: var(--fds-color-content-inverse);
+  --fds-button-primary-border: var(--fds-color-interactive-neutral-default);
+  --fds-button-background: var(--fds-button-primary-background-default);
+  --fds-button-content: var(--fds-button-primary-content);
+  --fds-button-border-color: var(--fds-button-primary-border);
+}
+
+.fds-button--primary:hover {
+  --fds-button-background: var(--fds-button-primary-background-hover);
+  --fds-button-border-color: var(--fds-button-primary-background-hover);
+}
+
+.fds-button--primary:active {
+  --fds-button-background: var(--fds-button-primary-background-active);
+  --fds-button-border-color: var(--fds-button-primary-background-active);
+}
+
+.fds-button--secondary {
+  --fds-button-secondary-background-default: transparent;
+  --fds-button-secondary-background-hover: var(--fds-color-surface-subtle);
+  --fds-button-secondary-content: var(--fds-color-content-primary);
+  --fds-button-secondary-border: var(--fds-color-border-interactive);
+  --fds-button-background: var(--fds-button-secondary-background-default);
+  --fds-button-content: var(--fds-button-secondary-content);
+  --fds-button-border-color: var(--fds-button-secondary-border);
+}
+
+.fds-button--secondary:hover {
+  --fds-button-background: var(--fds-button-secondary-background-hover);
+}
+
+.fds-button--disabled,
+.fds-button:disabled {
+  --fds-button-disabled-background: var(--fds-color-surface-subtle);
+  --fds-button-disabled-content: var(--fds-color-content-disabled);
+  --fds-button-disabled-border: var(--fds-color-border-disabled);
+  --fds-button-background: var(--fds-button-disabled-background);
+  --fds-button-content: var(--fds-button-disabled-content);
+  --fds-button-border-color: var(--fds-button-disabled-border);
+  cursor: not-allowed;
+}
