@@ -55,6 +55,7 @@
 .fds-button--secondary {
   --fds-button-secondary-background-default: transparent;
   --fds-button-secondary-background-hover: var(--fds-color-surface-subtle);
+  --fds-button-secondary-background-active: var(--fds-color-surface-subtle);
   --fds-button-secondary-content: var(--fds-color-content-primary);
   --fds-button-secondary-border: var(--fds-color-border-interactive);
   --fds-button-background: var(--fds-button-secondary-background-default);
@@ -64,6 +65,10 @@
 
 .fds-button--secondary:hover {
   --fds-button-background: var(--fds-button-secondary-background-hover);
+}
+
+.fds-button--secondary:active {
+  --fds-button-background: var(--fds-button-secondary-background-active);
 }
 
 .fds-button--disabled,
