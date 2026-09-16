@@ -55,6 +55,7 @@ export const buttonTokens = {
       background: {
         default: 'var(--fds-button-secondary-background-default, transparent)',
         hover: 'var(--fds-button-secondary-background-hover, var(--fds-color-surface-subtle))',
+        active: 'var(--fds-button-secondary-background-active, var(--fds-color-surface-subtle))',
       },
       content: 'var(--fds-button-secondary-content, var(--fds-color-content-primary))',
       border: 'var(--fds-button-secondary-border, var(--fds-color-border-interactive))',
